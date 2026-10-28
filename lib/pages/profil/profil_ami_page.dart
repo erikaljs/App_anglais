@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../modeles/deck.dart';
 import '../../services/deck_service.dart';
+import '../../services/user_service.dart';
 import '../../theme/app_avatars.dart';
 import '../../theme/app_colors.dart';
 import '../perso/deck_detail_page.dart';
@@ -13,6 +14,33 @@ class ProfilAmiPage extends StatelessWidget {
   const ProfilAmiPage({super.key, required this.uid});
 
   final String uid;
+
+  Future<void> _retirerAmi(BuildContext context) async {
+    final confirme = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Retirer cet ami ?'),
+        content: const Text(
+          'Vous ne serez plus amis. Ses paquets partagés disparaîtront de '
+          'tes révisions, et les tiens des siennes.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Annuler'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            child: const Text('Retirer'),
+          ),
+        ],
+      ),
+    );
+    if (confirme != true) return;
+
+    await UserService.retirerAmi(uid);
+    if (context.mounted) Navigator.of(context).pop();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -90,6 +118,13 @@ class ProfilAmiPage extends StatelessWidget {
                     ],
                   );
                 },
+              ),
+              const SizedBox(height: 24),
+              OutlinedButton.icon(
+                onPressed: () => _retirerAmi(context),
+                style: OutlinedButton.styleFrom(foregroundColor: AppColors.erreurTexte),
+                icon: const Icon(Icons.person_remove_outlined),
+                label: const Text('Retirer cet ami'),
               ),
             ],
           );

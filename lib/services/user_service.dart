@@ -120,6 +120,20 @@ class UserService {
     });
   }
 
+  /// Met fin à l'amitié avec [uidAmi] : retire chacun de la liste d'amis
+  /// de l'autre. Ses paquets partagés disparaissent alors de mes
+  /// révisions (et les miens des siennes).
+  static Future<void> retirerAmi(String uidAmi) async {
+    final lot = _db.batch();
+    lot.update(_db.collection('users').doc(uidActuel), {
+      'amis': FieldValue.arrayRemove([uidAmi]),
+    });
+    lot.update(_db.collection('users').doc(uidAmi), {
+      'amis': FieldValue.arrayRemove([uidActuel]),
+    });
+    await lot.commit();
+  }
+
   /// À appeler après chaque exercice terminé : met à jour la série de
   /// jours. Si la dernière activité était hier, la série continue (+1).
   /// Si c'était déjà aujourd'hui, elle ne change pas. Sinon (plus d'un
