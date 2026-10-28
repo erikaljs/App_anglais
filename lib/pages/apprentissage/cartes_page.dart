@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../modeles/contenu.dart';
 import '../../services/progress_service.dart';
+import '../../services/tts_service.dart';
+import '../../services/user_service.dart';
 import '../../theme/app_colors.dart';
 
 /// L'exercice de cartes (flashcards) pour une leçon : on retourne chaque
@@ -71,7 +73,9 @@ class _CartesPageState extends State<CartesPage> {
     await ProgressService.enregistrerResultatLecon(
       leconId: widget.lecon.id,
       score: _scorePremierTour ?? 100,
+      type: widget.lecon.id.startsWith('deck-') ? 'paquet' : 'lecon',
     );
+    await UserService.enregistrerActivite();
     if (mounted) Navigator.of(context).pop();
   }
 
@@ -170,7 +174,12 @@ class _CartesPageState extends State<CartesPage> {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w700),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
+          IconButton(
+            tooltip: 'Écouter le mot anglais',
+            icon: const Icon(Icons.volume_up, color: AppColors.bleuPrincipal),
+            onPressed: () => TtsService.lire(carte.en),
+          ),
           Text(
             _retourne ? 'Français' : 'Touche la carte pour voir la traduction',
             style: const TextStyle(color: AppColors.texteSecondaire, fontSize: 12),

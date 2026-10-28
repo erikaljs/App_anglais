@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import '../../modeles/contenu.dart';
 import '../../services/correction_service.dart';
 import '../../services/progress_service.dart';
+import '../../services/tts_service.dart';
+import '../../services/user_service.dart';
 import '../../theme/app_colors.dart';
 
 /// Une phrase à traduire, dans un sens choisi au hasard (français → anglais
@@ -103,8 +105,19 @@ class _PhrasesPageState extends State<PhrasesPage> {
     await ProgressService.enregistrerResultatLecon(
       leconId: '${widget.lecon.id}_phrases',
       score: score,
+      type: widget.lecon.id.startsWith('deck-') ? 'paquet' : 'lecon',
     );
+    await UserService.enregistrerActivite();
     if (mounted) Navigator.of(context).pop();
+  }
+
+  /// Le texte anglais à écouter pour l'exercice en cours, s'il y en a un
+  /// de disponible tout de suite (la question si elle est déjà en
+  /// anglais, sinon la réponse une fois validée).
+  String? _texteAnglaisAEcouter(_ExercicePhrase exercice) {
+    if (!exercice.cibleAnglais) return exercice.question;
+    if (_resultat != null) return exercice.reponsesAcceptees.first;
+    return null;
   }
 
   @override
@@ -122,6 +135,7 @@ class _PhrasesPageState extends State<PhrasesPage> {
   Widget _ecranQuestion() {
     final exercice = _exercices[_index];
     final resultat = _resultat;
+    final texteAEcouter = _texteAnglaisAEcouter(exercice);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -137,9 +151,21 @@ class _PhrasesPageState extends State<PhrasesPage> {
             borderRadius: BorderRadius.circular(20),
             border: Border.all(color: AppColors.carteBordure),
           ),
-          child: Text(
-            exercice.question,
-            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                exercice.question,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+              ),
+              if (texteAEcouter != null)
+                IconButton(
+                  tooltip: 'Écouter en anglais',
+                  icon: const Icon(Icons.volume_up, color: AppColors.bleuPrincipal),
+                  onPressed: () => TtsService.lire(texteAEcouter),
+                ),
+            ],
           ),
         ),
         const SizedBox(height: 16),

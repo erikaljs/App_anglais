@@ -19,17 +19,19 @@ class ProgressService {
     return _progressionsRef.snapshots();
   }
 
-  /// Enregistre le résultat d'une leçon de cartes.
+  /// Enregistre le résultat d'un exercice (cartes, phrases ou mini-leçon),
+  /// pour une leçon officielle ou un paquet perso.
   ///
-  /// [score] est le pourcentage de cartes connues du premier coup (0 à 100).
-  /// La leçon est "terminée" si toutes les cartes étaient connues, sinon
-  /// "en cours" (l'utilisateur pourra la refaire plus tard).
+  /// [score] est le pourcentage de réussite (0 à 100). C'est "terminé" si
+  /// tout était réussi, sinon "en cours" (l'utilisateur pourra refaire
+  /// l'exercice plus tard).
   static Future<void> enregistrerResultatLecon({
     required String leconId,
     required int score,
+    String type = 'lecon',
   }) {
     return _progressionsRef.doc(leconId).set({
-      'type': 'lecon',
+      'type': type,
       'refId': leconId,
       'statut': score >= 100 ? 'terminee' : 'en_cours',
       'score': score,

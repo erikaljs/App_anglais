@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../modeles/contenu.dart';
 import '../../services/progress_service.dart';
+import '../../services/tts_service.dart';
+import '../../services/user_service.dart';
 import '../../theme/app_colors.dart';
 
 /// La mini-leçon : d'abord la règle et des exemples, puis un petit quiz
@@ -52,7 +54,9 @@ class _MiniLeconPageState extends State<MiniLeconPage> {
     await ProgressService.enregistrerResultatLecon(
       leconId: '${widget.lecon.id}_minilecon',
       score: score,
+      type: widget.lecon.id.startsWith('deck-') ? 'paquet' : 'lecon',
     );
+    await UserService.enregistrerActivite();
     if (mounted) Navigator.of(context).pop();
   }
 
@@ -89,13 +93,27 @@ class _MiniLeconPageState extends State<MiniLeconPage> {
             padding: const EdgeInsets.only(bottom: 8),
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: AppColors.carteBordure),
               ),
-              child: Text(exemple, style: const TextStyle(fontStyle: FontStyle.italic)),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      exemple,
+                      style: const TextStyle(fontStyle: FontStyle.italic),
+                    ),
+                  ),
+                  IconButton(
+                    tooltip: 'Écouter',
+                    icon: const Icon(Icons.volume_up, color: AppColors.bleuPrincipal),
+                    onPressed: () => TtsService.lire(exemple),
+                  ),
+                ],
+              ),
             ),
           ),
         const SizedBox(height: 24),

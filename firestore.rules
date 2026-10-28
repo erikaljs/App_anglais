@@ -37,6 +37,21 @@ service cloud.firestore {
       allow read, write: if estConnecte() && request.auth.uid == uid;
     }
 
+    // Un paquet perso : son propriétaire peut tout faire. Un ami peut le
+    // lire seulement s'il est visible "amis" (pas s'il est "prive").
+    match /users/{uid}/decks/{deckId} {
+      allow read: if estConnecte() && (
+        request.auth.uid == uid ||
+        (resource.data.visibilite == 'amis' && estAmiDe(uid))
+      );
+      allow create, update, delete: if estConnecte() && request.auth.uid == uid;
+    }
+
+    // Mes paquets suivis (liens vers des paquets d'amis) : seulement moi.
+    match /users/{uid}/decksSuivis/{id} {
+      allow read, write: if estConnecte() && request.auth.uid == uid;
+    }
+
     // La réservation d'un pseudo : une fois pris, il ne change plus.
     match /pseudos/{pseudo} {
       allow read: if estConnecte();
@@ -82,6 +97,14 @@ service cloud.firestore {
     function existeDemandeAcceptee(deUid, versUid) {
       let chemin = /databases/$(database)/documents/friendRequests/$(deUid + '_' + versUid);
       return exists(chemin) && get(chemin).data.statut == 'acceptee';
+    }
+
+    // Est-ce que [autreUid] fait partie de MES amis (lu dans mon propre
+    // profil) ? Utilisé pour savoir si je peux voir les paquets "amis"
+    // de quelqu'un d'autre.
+    function estAmiDe(autreUid) {
+      let monChemin = /databases/$(database)/documents/users/$(request.auth.uid);
+      return exists(monChemin) && autreUid in get(monChemin).data.amis;
     }
   }
 }

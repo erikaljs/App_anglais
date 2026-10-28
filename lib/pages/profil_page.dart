@@ -8,6 +8,7 @@ import '../theme/app_avatars.dart';
 import '../theme/app_colors.dart';
 import 'profil/ajouter_ami_dialog.dart';
 import 'profil/avatar_dialog.dart';
+import 'profil/profil_ami_page.dart';
 
 /// Page de profil : pseudo, avatar, statistiques, code ami, demandes
 /// d'ami reçues et liste des amis.
@@ -366,6 +367,10 @@ class _TuileAmi extends StatelessWidget {
           child: ListTile(
             leading: Icon(AppAvatars.icone(avatar)),
             title: Text(pseudo),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => ProfilAmiPage(uid: uid)),
+            ),
           ),
         );
       },

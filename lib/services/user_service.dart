@@ -119,4 +119,45 @@ class UserService {
       'statut': 'refusee',
     });
   }
+
+  /// À appeler après chaque exercice terminé : met à jour la série de
+  /// jours. Si la dernière activité était hier, la série continue (+1).
+  /// Si c'était déjà aujourd'hui, elle ne change pas. Sinon (plus d'un
+  /// jour d'écart, ou première activité), elle redémarre à 1.
+  static Future<void> enregistrerActivite() async {
+    final refUtilisateur = _db.collection('users').doc(uidActuel);
+    final document = await refUtilisateur.get();
+    final donnees = document.data();
+    if (donnees == null) return;
+
+    final derniereActiviteTimestamp = donnees['derniereActivite'] as Timestamp?;
+    final serieActuelle = (donnees['serieJours'] as int?) ?? 0;
+    final maintenant = DateTime.now();
+
+    int nouvelleSerie;
+    if (derniereActiviteTimestamp == null) {
+      nouvelleSerie = 1;
+    } else {
+      final joursEcoules = _joursEntre(derniereActiviteTimestamp.toDate(), maintenant);
+      if (joursEcoules == 0) {
+        nouvelleSerie = serieActuelle == 0 ? 1 : serieActuelle; // déjà compté aujourd'hui
+      } else if (joursEcoules == 1) {
+        nouvelleSerie = serieActuelle + 1;
+      } else {
+        nouvelleSerie = 1; // la série est cassée
+      }
+    }
+
+    await refUtilisateur.update({
+      'serieJours': nouvelleSerie,
+      'derniereActivite': FieldValue.serverTimestamp(),
+    });
+  }
+
+  /// Nombre de jours calendaires entre deux dates (ignore l'heure).
+  static int _joursEntre(DateTime a, DateTime b) {
+    final dateA = DateTime(a.year, a.month, a.day);
+    final dateB = DateTime(b.year, b.month, b.day);
+    return dateB.difference(dateA).inDays;
+  }
 }

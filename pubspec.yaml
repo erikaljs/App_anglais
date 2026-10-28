@@ -40,6 +40,7 @@ dependencies:
   firebase_core: ^5.1.0
   firebase_auth: ^7.0.1
   cloud_firestore: ^7.1.0
+  flutter_tts: ^4.2.5
 
 dev_dependencies:
   flutter_test:
@@ -65,7 +66,7 @@ flutter:
   uses-material-design: true
 
   # Le contenu des leçons (cartes, phrases, mini-leçons), généré par
-  # outils/convertir_vocabulaire.dart à partir de donnees/.
+  # outils/convertir_contenu.dart à partir de donnees/.
   assets:
     - assets/contenu/
 
