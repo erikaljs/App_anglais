@@ -51,6 +51,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
+  excel: ^4.0.6
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -62,6 +63,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Le contenu des leçons (cartes, phrases, mini-leçons), généré par
+  # outils/convertir_vocabulaire.dart à partir de donnees/.
+  assets:
+    - assets/contenu/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

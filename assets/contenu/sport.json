@@ -1,0 +1,271 @@
+{
+  "id": "sport",
+  "nom": "Sport",
+  "lecons": [
+    {
+      "id": "sport-module-1",
+      "titre": "Moi et les autres",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "coach",
+          "fr": "entraîneur, coach"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "sport-module-2",
+      "titre": "Mon quotidien",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "trainers",
+          "fr": "baskets"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "sport-module-3",
+      "titre": "Autour de moi",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "gym",
+          "fr": "salle de sport"
+        },
+        {
+          "en": "body",
+          "fr": "corps"
+        },
+        {
+          "en": "head",
+          "fr": "tête"
+        },
+        {
+          "en": "arm",
+          "fr": "bras"
+        },
+        {
+          "en": "hand",
+          "fr": "main"
+        },
+        {
+          "en": "finger",
+          "fr": "doigt"
+        },
+        {
+          "en": "leg",
+          "fr": "jambe"
+        },
+        {
+          "en": "knee",
+          "fr": "genou"
+        },
+        {
+          "en": "foot",
+          "fr": "pied (pluriel : feet)"
+        },
+        {
+          "en": "back",
+          "fr": "dos"
+        },
+        {
+          "en": "shoulder",
+          "fr": "épaule"
+        },
+        {
+          "en": "neck",
+          "fr": "cou"
+        },
+        {
+          "en": "stomach",
+          "fr": "ventre"
+        },
+        {
+          "en": "to walk",
+          "fr": "marcher"
+        },
+        {
+          "en": "to run",
+          "fr": "courir"
+        },
+        {
+          "en": "to jump",
+          "fr": "sauter"
+        },
+        {
+          "en": "to sit down",
+          "fr": "s'asseoir"
+        },
+        {
+          "en": "to stand up",
+          "fr": "se lever (debout)"
+        },
+        {
+          "en": "to turn",
+          "fr": "tourner"
+        },
+        {
+          "en": "left",
+          "fr": "gauche"
+        },
+        {
+          "en": "right",
+          "fr": "droite"
+        },
+        {
+          "en": "up",
+          "fr": "en haut"
+        },
+        {
+          "en": "down",
+          "fr": "en bas"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "sport-module-4",
+      "titre": "Ce qui se passe maintenant",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "to work out",
+          "fr": "faire de la musculation, s'entraîner"
+        },
+        {
+          "en": "to train",
+          "fr": "s'entraîner"
+        },
+        {
+          "en": "to swim",
+          "fr": "nager"
+        },
+        {
+          "en": "to ride a bike",
+          "fr": "faire du vélo"
+        },
+        {
+          "en": "to climb",
+          "fr": "grimper, escalader"
+        },
+        {
+          "en": "to stretch",
+          "fr": "s'étirer"
+        },
+        {
+          "en": "to warm up",
+          "fr": "s'échauffer"
+        },
+        {
+          "en": "to cool down",
+          "fr": "récupérer, faire le retour au calme"
+        },
+        {
+          "en": "to breathe",
+          "fr": "respirer"
+        },
+        {
+          "en": "football",
+          "fr": "football"
+        },
+        {
+          "en": "tennis",
+          "fr": "tennis"
+        },
+        {
+          "en": "running",
+          "fr": "course à pied"
+        },
+        {
+          "en": "cycling",
+          "fr": "cyclisme"
+        },
+        {
+          "en": "swimming",
+          "fr": "natation"
+        },
+        {
+          "en": "hiking",
+          "fr": "randonnée"
+        },
+        {
+          "en": "match",
+          "fr": "match"
+        },
+        {
+          "en": "team",
+          "fr": "équipe"
+        },
+        {
+          "en": "player",
+          "fr": "joueur, joueuse"
+        },
+        {
+          "en": "to win",
+          "fr": "gagner"
+        },
+        {
+          "en": "to lose",
+          "fr": "perdre"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "sport-module-7",
+      "titre": "Comparer et décrire",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "to hurt",
+          "fr": "faire mal"
+        },
+        {
+          "en": "injury",
+          "fr": "blessure"
+        },
+        {
+          "en": "pain",
+          "fr": "douleur"
+        },
+        {
+          "en": "to rest",
+          "fr": "se reposer"
+        },
+        {
+          "en": "strong",
+          "fr": "fort"
+        },
+        {
+          "en": "weak",
+          "fr": "faible"
+        },
+        {
+          "en": "slowly",
+          "fr": "lentement"
+        },
+        {
+          "en": "quickly",
+          "fr": "rapidement"
+        },
+        {
+          "en": "carefully",
+          "fr": "prudemment, avec soin"
+        },
+        {
+          "en": "hard",
+          "fr": "dur, fort (adverbe)"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    }
+  ]
+}

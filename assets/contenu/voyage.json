@@ -1,0 +1,437 @@
+{
+  "id": "voyage",
+  "nom": "Voyage",
+  "lecons": [
+    {
+      "id": "voyage-module-3",
+      "titre": "Autour de moi",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "plane",
+          "fr": "avion"
+        },
+        {
+          "en": "station",
+          "fr": "gare"
+        },
+        {
+          "en": "to go straight on",
+          "fr": "aller tout droit"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "voyage-module-4",
+      "titre": "Ce qui se passe maintenant",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "to travel",
+          "fr": "voyager"
+        },
+        {
+          "en": "umbrella",
+          "fr": "parapluie"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "voyage-module-5",
+      "titre": "Raconter le passé",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "holiday",
+          "fr": "vacances (GB)"
+        },
+        {
+          "en": "vacation",
+          "fr": "vacances (US)"
+        },
+        {
+          "en": "trip",
+          "fr": "voyage, excursion"
+        },
+        {
+          "en": "journey",
+          "fr": "trajet, voyage"
+        },
+        {
+          "en": "souvenir",
+          "fr": "souvenir (objet)"
+        },
+        {
+          "en": "beach",
+          "fr": "plage"
+        },
+        {
+          "en": "mountain",
+          "fr": "montagne"
+        },
+        {
+          "en": "countryside",
+          "fr": "campagne"
+        },
+        {
+          "en": "sea",
+          "fr": "mer"
+        },
+        {
+          "en": "lake",
+          "fr": "lac"
+        },
+        {
+          "en": "river",
+          "fr": "rivière, fleuve"
+        },
+        {
+          "en": "island",
+          "fr": "île"
+        },
+        {
+          "en": "to visit",
+          "fr": "visiter, rendre visite"
+        },
+        {
+          "en": "to go sightseeing",
+          "fr": "faire du tourisme"
+        },
+        {
+          "en": "to take photos",
+          "fr": "prendre des photos"
+        },
+        {
+          "en": "museum",
+          "fr": "musée"
+        },
+        {
+          "en": "castle",
+          "fr": "château"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "voyage-module-6",
+      "titre": "En voyage",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "hotel",
+          "fr": "hôtel"
+        },
+        {
+          "en": "reception",
+          "fr": "réception"
+        },
+        {
+          "en": "receptionist",
+          "fr": "réceptionniste"
+        },
+        {
+          "en": "reservation",
+          "fr": "réservation"
+        },
+        {
+          "en": "to book",
+          "fr": "réserver"
+        },
+        {
+          "en": "single room",
+          "fr": "chambre simple"
+        },
+        {
+          "en": "double room",
+          "fr": "chambre double"
+        },
+        {
+          "en": "key card",
+          "fr": "carte-clé"
+        },
+        {
+          "en": "check-in",
+          "fr": "enregistrement, arrivée"
+        },
+        {
+          "en": "check-out",
+          "fr": "départ (de l'hôtel)"
+        },
+        {
+          "en": "breakfast included",
+          "fr": "petit-déjeuner compris"
+        },
+        {
+          "en": "towel",
+          "fr": "serviette de bain"
+        },
+        {
+          "en": "air conditioning",
+          "fr": "climatisation"
+        },
+        {
+          "en": "noisy",
+          "fr": "bruyant"
+        },
+        {
+          "en": "lift",
+          "fr": "ascenseur (GB)"
+        },
+        {
+          "en": "elevator",
+          "fr": "ascenseur (US)"
+        },
+        {
+          "en": "restaurant",
+          "fr": "restaurant"
+        },
+        {
+          "en": "menu",
+          "fr": "carte, menu"
+        },
+        {
+          "en": "waiter",
+          "fr": "serveur"
+        },
+        {
+          "en": "waitress",
+          "fr": "serveuse"
+        },
+        {
+          "en": "starter",
+          "fr": "entrée (plat)"
+        },
+        {
+          "en": "main course",
+          "fr": "plat principal"
+        },
+        {
+          "en": "dessert",
+          "fr": "dessert"
+        },
+        {
+          "en": "the bill",
+          "fr": "l'addition (GB)"
+        },
+        {
+          "en": "the check",
+          "fr": "l'addition (US)"
+        },
+        {
+          "en": "tip",
+          "fr": "pourboire"
+        },
+        {
+          "en": "to order",
+          "fr": "commander"
+        },
+        {
+          "en": "I'd like",
+          "fr": "je voudrais"
+        },
+        {
+          "en": "to be allergic to",
+          "fr": "être allergique à"
+        },
+        {
+          "en": "vegetarian",
+          "fr": "végétarien"
+        },
+        {
+          "en": "airport",
+          "fr": "aéroport"
+        },
+        {
+          "en": "flight",
+          "fr": "vol"
+        },
+        {
+          "en": "passport",
+          "fr": "passeport"
+        },
+        {
+          "en": "boarding pass",
+          "fr": "carte d'embarquement"
+        },
+        {
+          "en": "gate",
+          "fr": "porte d'embarquement"
+        },
+        {
+          "en": "luggage",
+          "fr": "bagages"
+        },
+        {
+          "en": "suitcase",
+          "fr": "valise"
+        },
+        {
+          "en": "hand luggage",
+          "fr": "bagage à main"
+        },
+        {
+          "en": "delayed",
+          "fr": "retardé"
+        },
+        {
+          "en": "cancelled",
+          "fr": "annulé"
+        },
+        {
+          "en": "departure",
+          "fr": "départ"
+        },
+        {
+          "en": "arrival",
+          "fr": "arrivée"
+        },
+        {
+          "en": "window seat",
+          "fr": "place côté hublot"
+        },
+        {
+          "en": "aisle seat",
+          "fr": "place côté couloir"
+        },
+        {
+          "en": "ticket",
+          "fr": "billet"
+        },
+        {
+          "en": "return ticket",
+          "fr": "billet aller-retour"
+        },
+        {
+          "en": "platform",
+          "fr": "quai"
+        },
+        {
+          "en": "traffic lights",
+          "fr": "feux de circulation"
+        },
+        {
+          "en": "crossroads",
+          "fr": "carrefour"
+        },
+        {
+          "en": "roundabout",
+          "fr": "rond-point"
+        },
+        {
+          "en": "corner",
+          "fr": "coin"
+        },
+        {
+          "en": "far",
+          "fr": "loin"
+        },
+        {
+          "en": "near",
+          "fr": "près"
+        },
+        {
+          "en": "map",
+          "fr": "carte, plan"
+        },
+        {
+          "en": "money",
+          "fr": "argent"
+        },
+        {
+          "en": "cash",
+          "fr": "espèces, liquide"
+        },
+        {
+          "en": "credit card",
+          "fr": "carte de crédit"
+        },
+        {
+          "en": "receipt",
+          "fr": "reçu, ticket de caisse"
+        },
+        {
+          "en": "change",
+          "fr": "monnaie (rendue)"
+        },
+        {
+          "en": "How much is it?",
+          "fr": "combien ça coûte ?"
+        },
+        {
+          "en": "cheap",
+          "fr": "bon marché"
+        },
+        {
+          "en": "expensive",
+          "fr": "cher"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "voyage-module-7",
+      "titre": "Comparer et décrire",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "size",
+          "fr": "taille (vêtement)"
+        },
+        {
+          "en": "to try on",
+          "fr": "essayer (un vêtement)"
+        },
+        {
+          "en": "fitting room",
+          "fr": "cabine d'essayage"
+        },
+        {
+          "en": "sale",
+          "fr": "soldes"
+        },
+        {
+          "en": "discount",
+          "fr": "réduction"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "voyage-module-8",
+      "titre": "Expériences",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "abroad",
+          "fr": "à l'étranger"
+        },
+        {
+          "en": "flown",
+          "fr": "volé, pris l'avion (participe de fly)"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "voyage-module-9",
+      "titre": "Raconter une histoire",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "to get lost",
+          "fr": "se perdre"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    }
+  ]
+}

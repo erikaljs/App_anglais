@@ -39,4 +39,25 @@ class AppColors {
   static const persoTexte = Color(0xFF16213E);
   static const jeuxFond = Color(0xFF16213E);
   static const jeuxTexte = Colors.white;
+
+  /// Les couleurs (fond, texte) d'une catégorie à partir de son identifiant
+  /// (ex: "sport"). Utilisé pour les tuiles de la Home.
+  static (Color fond, Color texte) couleursCategorie(String idCategorie) {
+    switch (idCategorie) {
+      case 'debutant':
+        return (debutantFond, debutantTexte);
+      case 'voyage':
+        return (voyageFond, voyageTexte);
+      case 'sport':
+        return (sportFond, sportTexte);
+      case 'technique':
+        return (techniqueFond, techniqueTexte);
+      case 'perso':
+        return (persoFond, persoTexte);
+      case 'jeux':
+        return (jeuxFond, jeuxTexte);
+      default:
+        return (fond, bleuFonce);
+    }
+  }
 }

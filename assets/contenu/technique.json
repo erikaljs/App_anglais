@@ -1,0 +1,993 @@
+{
+  "id": "technique",
+  "nom": "Technique",
+  "lecons": [
+    {
+      "id": "technique-module-8",
+      "titre": "Expériences",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "apprenticeship",
+          "fr": "apprentissage, alternance"
+        },
+        {
+          "en": "internship",
+          "fr": "stage"
+        },
+        {
+          "en": "to apply for",
+          "fr": "postuler à"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-9",
+      "titre": "Raconter une histoire",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "to break down",
+          "fr": "tomber en panne"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-10",
+      "titre": "Hypothèses",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "renewable energy",
+          "fr": "énergie renouvelable"
+        },
+        {
+          "en": "solar panel",
+          "fr": "panneau solaire"
+        },
+        {
+          "en": "device",
+          "fr": "appareil"
+        },
+        {
+          "en": "smartphone",
+          "fr": "smartphone"
+        },
+        {
+          "en": "app",
+          "fr": "application"
+        },
+        {
+          "en": "to download",
+          "fr": "télécharger"
+        },
+        {
+          "en": "to update",
+          "fr": "mettre à jour"
+        },
+        {
+          "en": "to charge",
+          "fr": "charger (batterie)"
+        },
+        {
+          "en": "battery",
+          "fr": "batterie, pile"
+        },
+        {
+          "en": "wireless",
+          "fr": "sans fil"
+        },
+        {
+          "en": "password",
+          "fr": "mot de passe"
+        },
+        {
+          "en": "screen",
+          "fr": "écran"
+        },
+        {
+          "en": "to switch on",
+          "fr": "allumer"
+        },
+        {
+          "en": "to switch off",
+          "fr": "éteindre"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-11",
+      "titre": "Le monde du travail",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "company",
+          "fr": "entreprise"
+        },
+        {
+          "en": "department",
+          "fr": "service, département"
+        },
+        {
+          "en": "headquarters",
+          "fr": "siège social"
+        },
+        {
+          "en": "staff",
+          "fr": "personnel"
+        },
+        {
+          "en": "colleague",
+          "fr": "collègue"
+        },
+        {
+          "en": "boss",
+          "fr": "patron, chef"
+        },
+        {
+          "en": "project manager",
+          "fr": "chef de projet"
+        },
+        {
+          "en": "team leader",
+          "fr": "chef d'équipe"
+        },
+        {
+          "en": "client",
+          "fr": "client"
+        },
+        {
+          "en": "supplier",
+          "fr": "fournisseur"
+        },
+        {
+          "en": "position",
+          "fr": "poste"
+        },
+        {
+          "en": "job interview",
+          "fr": "entretien d'embauche"
+        },
+        {
+          "en": "CV",
+          "fr": "CV (GB)"
+        },
+        {
+          "en": "résumé",
+          "fr": "CV (US)"
+        },
+        {
+          "en": "salary",
+          "fr": "salaire"
+        },
+        {
+          "en": "contract",
+          "fr": "contrat"
+        },
+        {
+          "en": "to hire",
+          "fr": "embaucher"
+        },
+        {
+          "en": "to be in charge of",
+          "fr": "être responsable de"
+        },
+        {
+          "en": "meeting",
+          "fr": "réunion"
+        },
+        {
+          "en": "agenda",
+          "fr": "ordre du jour (faux ami)"
+        },
+        {
+          "en": "schedule",
+          "fr": "planning, emploi du temps"
+        },
+        {
+          "en": "deadline",
+          "fr": "échéance, date limite"
+        },
+        {
+          "en": "task",
+          "fr": "tâche"
+        },
+        {
+          "en": "to schedule",
+          "fr": "planifier"
+        },
+        {
+          "en": "on time",
+          "fr": "à l'heure, dans les temps"
+        },
+        {
+          "en": "behind schedule",
+          "fr": "en retard sur le planning"
+        },
+        {
+          "en": "attached",
+          "fr": "ci-joint"
+        },
+        {
+          "en": "Please find attached",
+          "fr": "veuillez trouver ci-joint"
+        },
+        {
+          "en": "I'm writing regarding",
+          "fr": "je vous écris au sujet de"
+        },
+        {
+          "en": "Best regards",
+          "fr": "cordialement"
+        },
+        {
+          "en": "I look forward to hearing from you",
+          "fr": "dans l'attente de votre réponse"
+        },
+        {
+          "en": "to make a decision",
+          "fr": "prendre une décision"
+        },
+        {
+          "en": "to make a mistake",
+          "fr": "faire une erreur"
+        },
+        {
+          "en": "to do research",
+          "fr": "faire des recherches"
+        },
+        {
+          "en": "to set up",
+          "fr": "mettre en place"
+        },
+        {
+          "en": "to carry out",
+          "fr": "réaliser, effectuer"
+        },
+        {
+          "en": "to deal with",
+          "fr": "gérer, s'occuper de"
+        },
+        {
+          "en": "to follow up",
+          "fr": "faire le suivi, relancer"
+        },
+        {
+          "en": "to figure out",
+          "fr": "comprendre, trouver la solution"
+        },
+        {
+          "en": "to look into",
+          "fr": "examiner, étudier"
+        },
+        {
+          "en": "to put off",
+          "fr": "reporter"
+        },
+        {
+          "en": "to call off",
+          "fr": "annuler"
+        },
+        {
+          "en": "to come up with",
+          "fr": "proposer, trouver (une idée)"
+        },
+        {
+          "en": "to run out of",
+          "fr": "être à court de"
+        },
+        {
+          "en": "to get back to",
+          "fr": "recontacter, revenir vers"
+        },
+        {
+          "en": "to take over",
+          "fr": "reprendre (en charge)"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-13",
+      "titre": "Bilan B1 et technique de base",
+      "niveau": "B1",
+      "cartes": [
+        {
+          "en": "steel",
+          "fr": "acier"
+        },
+        {
+          "en": "aluminium",
+          "fr": "aluminium"
+        },
+        {
+          "en": "copper",
+          "fr": "cuivre"
+        },
+        {
+          "en": "plastic",
+          "fr": "plastique"
+        },
+        {
+          "en": "rubber",
+          "fr": "caoutchouc"
+        },
+        {
+          "en": "glass",
+          "fr": "verre"
+        },
+        {
+          "en": "wood",
+          "fr": "bois"
+        },
+        {
+          "en": "screwdriver",
+          "fr": "tournevis"
+        },
+        {
+          "en": "wrench",
+          "fr": "clé (outil, US)"
+        },
+        {
+          "en": "spanner",
+          "fr": "clé (outil, GB)"
+        },
+        {
+          "en": "drill",
+          "fr": "perceuse"
+        },
+        {
+          "en": "pliers",
+          "fr": "pince"
+        },
+        {
+          "en": "soldering iron",
+          "fr": "fer à souder"
+        },
+        {
+          "en": "multimeter",
+          "fr": "multimètre"
+        },
+        {
+          "en": "motor",
+          "fr": "moteur (électrique)"
+        },
+        {
+          "en": "engine",
+          "fr": "moteur (thermique)"
+        },
+        {
+          "en": "sensor",
+          "fr": "capteur"
+        },
+        {
+          "en": "gear",
+          "fr": "engrenage"
+        },
+        {
+          "en": "belt",
+          "fr": "courroie"
+        },
+        {
+          "en": "bearing",
+          "fr": "roulement"
+        },
+        {
+          "en": "screw",
+          "fr": "vis"
+        },
+        {
+          "en": "bolt",
+          "fr": "boulon"
+        },
+        {
+          "en": "nut",
+          "fr": "écrou"
+        },
+        {
+          "en": "washer",
+          "fr": "rondelle"
+        },
+        {
+          "en": "cable",
+          "fr": "câble"
+        },
+        {
+          "en": "wire",
+          "fr": "fil (électrique)"
+        },
+        {
+          "en": "spring",
+          "fr": "ressort"
+        },
+        {
+          "en": "shaft",
+          "fr": "arbre (mécanique)"
+        },
+        {
+          "en": "to assemble",
+          "fr": "assembler"
+        },
+        {
+          "en": "to measure",
+          "fr": "mesurer"
+        },
+        {
+          "en": "to cut",
+          "fr": "couper"
+        },
+        {
+          "en": "to weld",
+          "fr": "souder (métal)"
+        },
+        {
+          "en": "to solder",
+          "fr": "souder (électronique)"
+        },
+        {
+          "en": "to connect",
+          "fr": "connecter, brancher"
+        },
+        {
+          "en": "to test",
+          "fr": "tester"
+        },
+        {
+          "en": "to adjust",
+          "fr": "régler"
+        },
+        {
+          "en": "to replace",
+          "fr": "remplacer"
+        },
+        {
+          "en": "to tighten",
+          "fr": "serrer"
+        },
+        {
+          "en": "to loosen",
+          "fr": "desserrer"
+        },
+        {
+          "en": "made of",
+          "fr": "fait en, fabriqué en (matière)"
+        },
+        {
+          "en": "used for",
+          "fr": "utilisé pour, sert à"
+        },
+        {
+          "en": "to consist of",
+          "fr": "se composer de"
+        },
+        {
+          "en": "to weigh",
+          "fr": "peser"
+        },
+        {
+          "en": "length",
+          "fr": "longueur"
+        },
+        {
+          "en": "width",
+          "fr": "largeur"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-14",
+      "titre": "Le passé en détail",
+      "niveau": "B2",
+      "cartes": [
+        {
+          "en": "background",
+          "fr": "parcours, contexte"
+        },
+        {
+          "en": "career path",
+          "fr": "parcours professionnel"
+        },
+        {
+          "en": "feedback",
+          "fr": "retour, avis"
+        },
+        {
+          "en": "lessons learned",
+          "fr": "retour d'expérience"
+        },
+        {
+          "en": "milestone",
+          "fr": "jalon, étape clé"
+        },
+        {
+          "en": "timeline",
+          "fr": "calendrier, chronologie"
+        },
+        {
+          "en": "delay",
+          "fr": "retard"
+        },
+        {
+          "en": "to be delayed",
+          "fr": "être retardé"
+        },
+        {
+          "en": "setback",
+          "fr": "revers, contretemps"
+        },
+        {
+          "en": "shortage",
+          "fr": "pénurie"
+        },
+        {
+          "en": "out of stock",
+          "fr": "en rupture de stock"
+        },
+        {
+          "en": "bottleneck",
+          "fr": "goulot d'étranglement"
+        },
+        {
+          "en": "workload",
+          "fr": "charge de travail"
+        },
+        {
+          "en": "to catch up",
+          "fr": "rattraper son retard"
+        },
+        {
+          "en": "to keep track of",
+          "fr": "suivre, garder trace de"
+        },
+        {
+          "en": "to postpone",
+          "fr": "reporter"
+        },
+        {
+          "en": "to reschedule",
+          "fr": "replanifier"
+        },
+        {
+          "en": "to overrun",
+          "fr": "dépasser (délai, budget)"
+        },
+        {
+          "en": "to reach",
+          "fr": "atteindre"
+        },
+        {
+          "en": "outcome",
+          "fr": "résultat, issue"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-15",
+      "titre": "Imaginer et regretter",
+      "niveau": "B2",
+      "cartes": [
+        {
+          "en": "worst-case scenario",
+          "fr": "le pire scénario"
+        },
+        {
+          "en": "best-case scenario",
+          "fr": "le meilleur scénario"
+        },
+        {
+          "en": "risk",
+          "fr": "risque"
+        },
+        {
+          "en": "trade-off",
+          "fr": "compromis"
+        },
+        {
+          "en": "feasible",
+          "fr": "faisable"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-16",
+      "titre": "Rapporter des paroles",
+      "niveau": "B2",
+      "cartes": [
+        {
+          "en": "minutes",
+          "fr": "compte rendu (de réunion)"
+        },
+        {
+          "en": "meeting summary",
+          "fr": "résumé de réunion"
+        },
+        {
+          "en": "attendees",
+          "fr": "participants"
+        },
+        {
+          "en": "action items",
+          "fr": "actions à mener"
+        },
+        {
+          "en": "follow-up email",
+          "fr": "mail de suivi"
+        },
+        {
+          "en": "to report",
+          "fr": "rapporter, signaler"
+        },
+        {
+          "en": "to confirm",
+          "fr": "confirmer"
+        },
+        {
+          "en": "to request",
+          "fr": "demander (formel)"
+        },
+        {
+          "en": "to inform",
+          "fr": "informer"
+        },
+        {
+          "en": "to clarify",
+          "fr": "clarifier"
+        },
+        {
+          "en": "to summarise",
+          "fr": "résumer"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-17",
+      "titre": "Anglais technique",
+      "niveau": "B2",
+      "cartes": [
+        {
+          "en": "mechatronics",
+          "fr": "mécatronique"
+        },
+        {
+          "en": "embedded system",
+          "fr": "système embarqué"
+        },
+        {
+          "en": "firmware",
+          "fr": "micrologiciel"
+        },
+        {
+          "en": "software",
+          "fr": "logiciel"
+        },
+        {
+          "en": "hardware",
+          "fr": "matériel"
+        },
+        {
+          "en": "printed circuit board (PCB)",
+          "fr": "circuit imprimé"
+        },
+        {
+          "en": "microcontroller",
+          "fr": "microcontrôleur"
+        },
+        {
+          "en": "component",
+          "fr": "composant"
+        },
+        {
+          "en": "power supply",
+          "fr": "alimentation électrique"
+        },
+        {
+          "en": "voltage",
+          "fr": "tension"
+        },
+        {
+          "en": "current",
+          "fr": "courant (électrique)"
+        },
+        {
+          "en": "resistor",
+          "fr": "résistance (composant)"
+        },
+        {
+          "en": "capacitor",
+          "fr": "condensateur"
+        },
+        {
+          "en": "fuse",
+          "fr": "fusible"
+        },
+        {
+          "en": "short circuit",
+          "fr": "court-circuit"
+        },
+        {
+          "en": "loose connection",
+          "fr": "faux contact"
+        },
+        {
+          "en": "to overheat",
+          "fr": "surchauffer"
+        },
+        {
+          "en": "actuator",
+          "fr": "actionneur"
+        },
+        {
+          "en": "gripper",
+          "fr": "pince (de robot), préhenseur"
+        },
+        {
+          "en": "robotic arm",
+          "fr": "bras robotisé"
+        },
+        {
+          "en": "mobile robot",
+          "fr": "robot mobile"
+        },
+        {
+          "en": "controller",
+          "fr": "contrôleur, automate"
+        },
+        {
+          "en": "lidar",
+          "fr": "lidar"
+        },
+        {
+          "en": "encoder",
+          "fr": "codeur, encodeur"
+        },
+        {
+          "en": "torque",
+          "fr": "couple (moteur)"
+        },
+        {
+          "en": "speed",
+          "fr": "vitesse"
+        },
+        {
+          "en": "accuracy",
+          "fr": "précision (justesse)"
+        },
+        {
+          "en": "tolerance",
+          "fr": "tolérance"
+        },
+        {
+          "en": "load",
+          "fr": "charge"
+        },
+        {
+          "en": "prototype",
+          "fr": "prototype"
+        },
+        {
+          "en": "specification",
+          "fr": "spécification, cahier des charges"
+        },
+        {
+          "en": "requirement",
+          "fr": "exigence"
+        },
+        {
+          "en": "shall",
+          "fr": "doit (exigence)"
+        },
+        {
+          "en": "test bench",
+          "fr": "banc d'essai"
+        },
+        {
+          "en": "to calibrate",
+          "fr": "étalonner"
+        },
+        {
+          "en": "to debug",
+          "fr": "déboguer"
+        },
+        {
+          "en": "bug",
+          "fr": "bogue"
+        },
+        {
+          "en": "root cause",
+          "fr": "cause racine"
+        },
+        {
+          "en": "workaround",
+          "fr": "solution de contournement"
+        },
+        {
+          "en": "fix",
+          "fr": "correctif"
+        },
+        {
+          "en": "to deploy",
+          "fr": "déployer"
+        },
+        {
+          "en": "release",
+          "fr": "version, mise en production"
+        },
+        {
+          "en": "safety",
+          "fr": "sécurité (des personnes)"
+        },
+        {
+          "en": "security",
+          "fr": "sécurité (protection, cyber)"
+        },
+        {
+          "en": "emergency stop",
+          "fr": "arrêt d'urgence"
+        },
+        {
+          "en": "hazard",
+          "fr": "danger"
+        },
+        {
+          "en": "risk assessment",
+          "fr": "analyse de risques"
+        },
+        {
+          "en": "maintenance",
+          "fr": "maintenance"
+        },
+        {
+          "en": "wiring diagram",
+          "fr": "schéma de câblage"
+        },
+        {
+          "en": "datasheet",
+          "fr": "fiche technique"
+        },
+        {
+          "en": "to troubleshoot",
+          "fr": "dépanner, diagnostiquer"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-18",
+      "titre": "Négocier et convaincre",
+      "niveau": "B2",
+      "cartes": [
+        {
+          "en": "quote",
+          "fr": "devis"
+        },
+        {
+          "en": "quotation",
+          "fr": "devis (formel)"
+        },
+        {
+          "en": "budget",
+          "fr": "budget"
+        },
+        {
+          "en": "cost",
+          "fr": "coût"
+        },
+        {
+          "en": "price",
+          "fr": "prix"
+        },
+        {
+          "en": "invoice",
+          "fr": "facture"
+        },
+        {
+          "en": "deposit",
+          "fr": "acompte"
+        },
+        {
+          "en": "payment terms",
+          "fr": "conditions de paiement"
+        },
+        {
+          "en": "warranty",
+          "fr": "garantie"
+        },
+        {
+          "en": "lead time",
+          "fr": "délai de livraison"
+        },
+        {
+          "en": "scope",
+          "fr": "périmètre"
+        },
+        {
+          "en": "terms and conditions",
+          "fr": "conditions générales"
+        },
+        {
+          "en": "to negotiate",
+          "fr": "négocier"
+        },
+        {
+          "en": "deal",
+          "fr": "accord, affaire"
+        },
+        {
+          "en": "to reach an agreement",
+          "fr": "parvenir à un accord"
+        },
+        {
+          "en": "offer",
+          "fr": "offre"
+        },
+        {
+          "en": "counter-offer",
+          "fr": "contre-proposition"
+        },
+        {
+          "en": "to compromise",
+          "fr": "faire un compromis"
+        },
+        {
+          "en": "concession",
+          "fr": "concession"
+        },
+        {
+          "en": "in return",
+          "fr": "en contrepartie"
+        },
+        {
+          "en": "objection",
+          "fr": "objection"
+        },
+        {
+          "en": "concern",
+          "fr": "inquiétude, préoccupation"
+        },
+        {
+          "en": "I'm afraid",
+          "fr": "je crains que (refus poli)"
+        },
+        {
+          "en": "long-term",
+          "fr": "à long terme"
+        },
+        {
+          "en": "cost-effective",
+          "fr": "rentable"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "technique-module-19",
+      "titre": "Nuances et naturel",
+      "niveau": "B2",
+      "cartes": [
+        {
+          "en": "to touch base",
+          "fr": "faire un point"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    }
+  ]
+}

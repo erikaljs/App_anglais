@@ -1,0 +1,1364 @@
+{
+  "id": "debutant",
+  "nom": "Débutant",
+  "lecons": [
+    {
+      "id": "debutant-module-1",
+      "titre": "Moi et les autres",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "hello",
+          "fr": "bonjour, salut"
+        },
+        {
+          "en": "hi",
+          "fr": "salut"
+        },
+        {
+          "en": "good morning",
+          "fr": "bonjour (le matin)"
+        },
+        {
+          "en": "good afternoon",
+          "fr": "bonjour (l'après-midi)"
+        },
+        {
+          "en": "good evening",
+          "fr": "bonsoir"
+        },
+        {
+          "en": "good night",
+          "fr": "bonne nuit"
+        },
+        {
+          "en": "goodbye",
+          "fr": "au revoir"
+        },
+        {
+          "en": "see you later",
+          "fr": "à plus tard"
+        },
+        {
+          "en": "please",
+          "fr": "s'il te plaît, s'il vous plaît"
+        },
+        {
+          "en": "thank you",
+          "fr": "merci"
+        },
+        {
+          "en": "you're welcome",
+          "fr": "de rien"
+        },
+        {
+          "en": "sorry",
+          "fr": "désolé, pardon"
+        },
+        {
+          "en": "excuse me",
+          "fr": "excusez-moi"
+        },
+        {
+          "en": "nice to meet you",
+          "fr": "enchanté(e)"
+        },
+        {
+          "en": "name",
+          "fr": "nom, prénom"
+        },
+        {
+          "en": "first name",
+          "fr": "prénom"
+        },
+        {
+          "en": "surname",
+          "fr": "nom de famille"
+        },
+        {
+          "en": "age",
+          "fr": "âge"
+        },
+        {
+          "en": "address",
+          "fr": "adresse"
+        },
+        {
+          "en": "phone number",
+          "fr": "numéro de téléphone"
+        },
+        {
+          "en": "email address",
+          "fr": "adresse e-mail"
+        },
+        {
+          "en": "zero",
+          "fr": "zéro"
+        },
+        {
+          "en": "one",
+          "fr": "un"
+        },
+        {
+          "en": "two",
+          "fr": "deux"
+        },
+        {
+          "en": "three",
+          "fr": "trois"
+        },
+        {
+          "en": "four",
+          "fr": "quatre"
+        },
+        {
+          "en": "five",
+          "fr": "cinq"
+        },
+        {
+          "en": "six",
+          "fr": "six"
+        },
+        {
+          "en": "seven",
+          "fr": "sept"
+        },
+        {
+          "en": "eight",
+          "fr": "huit"
+        },
+        {
+          "en": "nine",
+          "fr": "neuf"
+        },
+        {
+          "en": "ten",
+          "fr": "dix"
+        },
+        {
+          "en": "eleven",
+          "fr": "onze"
+        },
+        {
+          "en": "twelve",
+          "fr": "douze"
+        },
+        {
+          "en": "thirteen",
+          "fr": "treize"
+        },
+        {
+          "en": "fifteen",
+          "fr": "quinze"
+        },
+        {
+          "en": "twenty",
+          "fr": "vingt"
+        },
+        {
+          "en": "thirty",
+          "fr": "trente"
+        },
+        {
+          "en": "forty",
+          "fr": "quarante"
+        },
+        {
+          "en": "fifty",
+          "fr": "cinquante"
+        },
+        {
+          "en": "one hundred",
+          "fr": "cent"
+        },
+        {
+          "en": "country",
+          "fr": "pays"
+        },
+        {
+          "en": "nationality",
+          "fr": "nationalité"
+        },
+        {
+          "en": "France",
+          "fr": "la France"
+        },
+        {
+          "en": "French",
+          "fr": "français(e)"
+        },
+        {
+          "en": "England",
+          "fr": "l'Angleterre"
+        },
+        {
+          "en": "English",
+          "fr": "anglais(e)"
+        },
+        {
+          "en": "the United Kingdom",
+          "fr": "le Royaume-Uni"
+        },
+        {
+          "en": "British",
+          "fr": "britannique"
+        },
+        {
+          "en": "the United States",
+          "fr": "les États-Unis"
+        },
+        {
+          "en": "American",
+          "fr": "américain(e)"
+        },
+        {
+          "en": "Germany",
+          "fr": "l'Allemagne"
+        },
+        {
+          "en": "German",
+          "fr": "allemand(e)"
+        },
+        {
+          "en": "Spain",
+          "fr": "l'Espagne"
+        },
+        {
+          "en": "Spanish",
+          "fr": "espagnol(e)"
+        },
+        {
+          "en": "Italy",
+          "fr": "l'Italie"
+        },
+        {
+          "en": "Italian",
+          "fr": "italien(ne)"
+        },
+        {
+          "en": "family",
+          "fr": "famille"
+        },
+        {
+          "en": "mother",
+          "fr": "mère"
+        },
+        {
+          "en": "father",
+          "fr": "père"
+        },
+        {
+          "en": "parents",
+          "fr": "parents"
+        },
+        {
+          "en": "brother",
+          "fr": "frère"
+        },
+        {
+          "en": "sister",
+          "fr": "sœur"
+        },
+        {
+          "en": "son",
+          "fr": "fils"
+        },
+        {
+          "en": "daughter",
+          "fr": "fille (enfant)"
+        },
+        {
+          "en": "husband",
+          "fr": "mari"
+        },
+        {
+          "en": "wife",
+          "fr": "femme (épouse)"
+        },
+        {
+          "en": "grandmother",
+          "fr": "grand-mère"
+        },
+        {
+          "en": "grandfather",
+          "fr": "grand-père"
+        },
+        {
+          "en": "friend",
+          "fr": "ami(e)"
+        },
+        {
+          "en": "boyfriend",
+          "fr": "petit ami"
+        },
+        {
+          "en": "girlfriend",
+          "fr": "petite amie"
+        },
+        {
+          "en": "job",
+          "fr": "métier, travail"
+        },
+        {
+          "en": "student",
+          "fr": "étudiant(e)"
+        },
+        {
+          "en": "teacher",
+          "fr": "professeur"
+        },
+        {
+          "en": "engineer",
+          "fr": "ingénieur(e)"
+        },
+        {
+          "en": "doctor",
+          "fr": "médecin"
+        },
+        {
+          "en": "nurse",
+          "fr": "infirmier, infirmière"
+        },
+        {
+          "en": "manager",
+          "fr": "responsable, manager"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "debutant-module-2",
+      "titre": "Mon quotidien",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "Monday",
+          "fr": "lundi"
+        },
+        {
+          "en": "Tuesday",
+          "fr": "mardi"
+        },
+        {
+          "en": "Wednesday",
+          "fr": "mercredi"
+        },
+        {
+          "en": "Thursday",
+          "fr": "jeudi"
+        },
+        {
+          "en": "Friday",
+          "fr": "vendredi"
+        },
+        {
+          "en": "Saturday",
+          "fr": "samedi"
+        },
+        {
+          "en": "Sunday",
+          "fr": "dimanche"
+        },
+        {
+          "en": "weekend",
+          "fr": "week-end"
+        },
+        {
+          "en": "January",
+          "fr": "janvier"
+        },
+        {
+          "en": "February",
+          "fr": "février"
+        },
+        {
+          "en": "March",
+          "fr": "mars"
+        },
+        {
+          "en": "April",
+          "fr": "avril"
+        },
+        {
+          "en": "May",
+          "fr": "mai"
+        },
+        {
+          "en": "June",
+          "fr": "juin"
+        },
+        {
+          "en": "July",
+          "fr": "juillet"
+        },
+        {
+          "en": "August",
+          "fr": "août"
+        },
+        {
+          "en": "September",
+          "fr": "septembre"
+        },
+        {
+          "en": "October",
+          "fr": "octobre"
+        },
+        {
+          "en": "November",
+          "fr": "novembre"
+        },
+        {
+          "en": "December",
+          "fr": "décembre"
+        },
+        {
+          "en": "today",
+          "fr": "aujourd'hui"
+        },
+        {
+          "en": "tomorrow",
+          "fr": "demain"
+        },
+        {
+          "en": "yesterday",
+          "fr": "hier"
+        },
+        {
+          "en": "morning",
+          "fr": "matin"
+        },
+        {
+          "en": "afternoon",
+          "fr": "après-midi"
+        },
+        {
+          "en": "evening",
+          "fr": "soir"
+        },
+        {
+          "en": "night",
+          "fr": "nuit"
+        },
+        {
+          "en": "hour",
+          "fr": "heure (durée)"
+        },
+        {
+          "en": "minute",
+          "fr": "minute"
+        },
+        {
+          "en": "half past",
+          "fr": "et demie"
+        },
+        {
+          "en": "quarter past",
+          "fr": "et quart"
+        },
+        {
+          "en": "quarter to",
+          "fr": "moins le quart"
+        },
+        {
+          "en": "o'clock",
+          "fr": "heure(s) pile"
+        },
+        {
+          "en": "to wake up",
+          "fr": "se réveiller"
+        },
+        {
+          "en": "to get up",
+          "fr": "se lever"
+        },
+        {
+          "en": "to have a shower",
+          "fr": "prendre une douche"
+        },
+        {
+          "en": "to get dressed",
+          "fr": "s'habiller"
+        },
+        {
+          "en": "to have breakfast",
+          "fr": "prendre le petit-déjeuner"
+        },
+        {
+          "en": "to go to work",
+          "fr": "aller au travail"
+        },
+        {
+          "en": "to start",
+          "fr": "commencer"
+        },
+        {
+          "en": "to finish",
+          "fr": "finir"
+        },
+        {
+          "en": "to come back",
+          "fr": "revenir, rentrer"
+        },
+        {
+          "en": "to cook",
+          "fr": "cuisiner"
+        },
+        {
+          "en": "to go to bed",
+          "fr": "aller se coucher"
+        },
+        {
+          "en": "to sleep",
+          "fr": "dormir"
+        },
+        {
+          "en": "always",
+          "fr": "toujours"
+        },
+        {
+          "en": "usually",
+          "fr": "d'habitude"
+        },
+        {
+          "en": "often",
+          "fr": "souvent"
+        },
+        {
+          "en": "sometimes",
+          "fr": "parfois"
+        },
+        {
+          "en": "rarely",
+          "fr": "rarement"
+        },
+        {
+          "en": "never",
+          "fr": "jamais"
+        },
+        {
+          "en": "breakfast",
+          "fr": "petit-déjeuner"
+        },
+        {
+          "en": "lunch",
+          "fr": "déjeuner"
+        },
+        {
+          "en": "dinner",
+          "fr": "dîner"
+        },
+        {
+          "en": "bread",
+          "fr": "pain"
+        },
+        {
+          "en": "water",
+          "fr": "eau"
+        },
+        {
+          "en": "coffee",
+          "fr": "café"
+        },
+        {
+          "en": "tea",
+          "fr": "thé"
+        },
+        {
+          "en": "milk",
+          "fr": "lait"
+        },
+        {
+          "en": "meat",
+          "fr": "viande"
+        },
+        {
+          "en": "fish",
+          "fr": "poisson"
+        },
+        {
+          "en": "vegetables",
+          "fr": "légumes"
+        },
+        {
+          "en": "fruit",
+          "fr": "fruit(s)"
+        },
+        {
+          "en": "egg",
+          "fr": "œuf"
+        },
+        {
+          "en": "cheese",
+          "fr": "fromage"
+        },
+        {
+          "en": "red",
+          "fr": "rouge"
+        },
+        {
+          "en": "blue",
+          "fr": "bleu"
+        },
+        {
+          "en": "green",
+          "fr": "vert"
+        },
+        {
+          "en": "yellow",
+          "fr": "jaune"
+        },
+        {
+          "en": "black",
+          "fr": "noir"
+        },
+        {
+          "en": "white",
+          "fr": "blanc"
+        },
+        {
+          "en": "grey",
+          "fr": "gris"
+        },
+        {
+          "en": "brown",
+          "fr": "marron"
+        },
+        {
+          "en": "clothes",
+          "fr": "vêtements"
+        },
+        {
+          "en": "T-shirt",
+          "fr": "tee-shirt"
+        },
+        {
+          "en": "trousers",
+          "fr": "pantalon"
+        },
+        {
+          "en": "jeans",
+          "fr": "jean"
+        },
+        {
+          "en": "dress",
+          "fr": "robe"
+        },
+        {
+          "en": "shoes",
+          "fr": "chaussures"
+        },
+        {
+          "en": "jacket",
+          "fr": "veste"
+        },
+        {
+          "en": "coat",
+          "fr": "manteau"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "debutant-module-3",
+      "titre": "Autour de moi",
+      "niveau": "A1",
+      "cartes": [
+        {
+          "en": "house",
+          "fr": "maison"
+        },
+        {
+          "en": "flat",
+          "fr": "appartement (GB)"
+        },
+        {
+          "en": "apartment",
+          "fr": "appartement (US)"
+        },
+        {
+          "en": "room",
+          "fr": "pièce, chambre"
+        },
+        {
+          "en": "bedroom",
+          "fr": "chambre à coucher"
+        },
+        {
+          "en": "bathroom",
+          "fr": "salle de bain"
+        },
+        {
+          "en": "kitchen",
+          "fr": "cuisine"
+        },
+        {
+          "en": "living room",
+          "fr": "salon"
+        },
+        {
+          "en": "garden",
+          "fr": "jardin"
+        },
+        {
+          "en": "stairs",
+          "fr": "escalier"
+        },
+        {
+          "en": "door",
+          "fr": "porte"
+        },
+        {
+          "en": "window",
+          "fr": "fenêtre"
+        },
+        {
+          "en": "table",
+          "fr": "table"
+        },
+        {
+          "en": "chair",
+          "fr": "chaise"
+        },
+        {
+          "en": "bed",
+          "fr": "lit"
+        },
+        {
+          "en": "sofa",
+          "fr": "canapé"
+        },
+        {
+          "en": "desk",
+          "fr": "bureau (meuble)"
+        },
+        {
+          "en": "shelf",
+          "fr": "étagère"
+        },
+        {
+          "en": "city",
+          "fr": "ville (grande)"
+        },
+        {
+          "en": "town",
+          "fr": "ville (petite)"
+        },
+        {
+          "en": "street",
+          "fr": "rue"
+        },
+        {
+          "en": "square",
+          "fr": "place"
+        },
+        {
+          "en": "park",
+          "fr": "parc"
+        },
+        {
+          "en": "shop",
+          "fr": "magasin"
+        },
+        {
+          "en": "supermarket",
+          "fr": "supermarché"
+        },
+        {
+          "en": "bakery",
+          "fr": "boulangerie"
+        },
+        {
+          "en": "pharmacy",
+          "fr": "pharmacie"
+        },
+        {
+          "en": "bank",
+          "fr": "banque"
+        },
+        {
+          "en": "post office",
+          "fr": "bureau de poste"
+        },
+        {
+          "en": "hospital",
+          "fr": "hôpital"
+        },
+        {
+          "en": "school",
+          "fr": "école"
+        },
+        {
+          "en": "car",
+          "fr": "voiture"
+        },
+        {
+          "en": "bus",
+          "fr": "bus"
+        },
+        {
+          "en": "train",
+          "fr": "train"
+        },
+        {
+          "en": "tram",
+          "fr": "tramway"
+        },
+        {
+          "en": "bike",
+          "fr": "vélo"
+        },
+        {
+          "en": "motorbike",
+          "fr": "moto"
+        },
+        {
+          "en": "in",
+          "fr": "dans"
+        },
+        {
+          "en": "on",
+          "fr": "sur"
+        },
+        {
+          "en": "under",
+          "fr": "sous"
+        },
+        {
+          "en": "next to",
+          "fr": "à côté de"
+        },
+        {
+          "en": "between",
+          "fr": "entre"
+        },
+        {
+          "en": "in front of",
+          "fr": "devant"
+        },
+        {
+          "en": "behind",
+          "fr": "derrière"
+        },
+        {
+          "en": "opposite",
+          "fr": "en face de"
+        },
+        {
+          "en": "above",
+          "fr": "au-dessus de"
+        },
+        {
+          "en": "below",
+          "fr": "en dessous de"
+        },
+        {
+          "en": "to open",
+          "fr": "ouvrir"
+        },
+        {
+          "en": "to close",
+          "fr": "fermer"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "debutant-module-4",
+      "titre": "Ce qui se passe maintenant",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "hobby",
+          "fr": "loisir, passe-temps"
+        },
+        {
+          "en": "free time",
+          "fr": "temps libre"
+        },
+        {
+          "en": "to read",
+          "fr": "lire"
+        },
+        {
+          "en": "to listen to music",
+          "fr": "écouter de la musique"
+        },
+        {
+          "en": "to watch a film",
+          "fr": "regarder un film"
+        },
+        {
+          "en": "to play video games",
+          "fr": "jouer aux jeux vidéo"
+        },
+        {
+          "en": "to draw",
+          "fr": "dessiner"
+        },
+        {
+          "en": "to paint",
+          "fr": "peindre"
+        },
+        {
+          "en": "to dance",
+          "fr": "danser"
+        },
+        {
+          "en": "to sing",
+          "fr": "chanter"
+        },
+        {
+          "en": "to go out",
+          "fr": "sortir"
+        },
+        {
+          "en": "to hang out",
+          "fr": "traîner, passer du temps (avec des amis)"
+        },
+        {
+          "en": "weather",
+          "fr": "météo, temps"
+        },
+        {
+          "en": "sunny",
+          "fr": "ensoleillé"
+        },
+        {
+          "en": "rainy",
+          "fr": "pluvieux"
+        },
+        {
+          "en": "cloudy",
+          "fr": "nuageux"
+        },
+        {
+          "en": "windy",
+          "fr": "venteux, il y a du vent"
+        },
+        {
+          "en": "foggy",
+          "fr": "brumeux"
+        },
+        {
+          "en": "it's raining",
+          "fr": "il pleut"
+        },
+        {
+          "en": "it's snowing",
+          "fr": "il neige"
+        },
+        {
+          "en": "hot",
+          "fr": "chaud (très)"
+        },
+        {
+          "en": "warm",
+          "fr": "chaud (agréable), tiède"
+        },
+        {
+          "en": "cold",
+          "fr": "froid"
+        },
+        {
+          "en": "freezing",
+          "fr": "glacial"
+        },
+        {
+          "en": "happy",
+          "fr": "heureux, content"
+        },
+        {
+          "en": "sad",
+          "fr": "triste"
+        },
+        {
+          "en": "tired",
+          "fr": "fatigué"
+        },
+        {
+          "en": "angry",
+          "fr": "en colère"
+        },
+        {
+          "en": "nervous",
+          "fr": "nerveux, stressé"
+        },
+        {
+          "en": "stressed",
+          "fr": "stressé"
+        },
+        {
+          "en": "excited",
+          "fr": "enthousiaste, impatient"
+        },
+        {
+          "en": "bored",
+          "fr": "qui s'ennuie"
+        },
+        {
+          "en": "boring",
+          "fr": "ennuyeux"
+        },
+        {
+          "en": "interested",
+          "fr": "intéressé"
+        },
+        {
+          "en": "interesting",
+          "fr": "intéressant"
+        },
+        {
+          "en": "worried",
+          "fr": "inquiet"
+        },
+        {
+          "en": "surprised",
+          "fr": "surpris"
+        },
+        {
+          "en": "scared",
+          "fr": "effrayé"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "debutant-module-5",
+      "titre": "Raconter le passé",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "memory",
+          "fr": "souvenir (dans la tête)"
+        },
+        {
+          "en": "to have fun",
+          "fr": "s'amuser"
+        },
+        {
+          "en": "to relax",
+          "fr": "se détendre"
+        },
+        {
+          "en": "birthday",
+          "fr": "anniversaire"
+        },
+        {
+          "en": "wedding",
+          "fr": "mariage (cérémonie)"
+        },
+        {
+          "en": "party",
+          "fr": "fête, soirée"
+        },
+        {
+          "en": "to be born",
+          "fr": "naître"
+        },
+        {
+          "en": "to grow up",
+          "fr": "grandir"
+        },
+        {
+          "en": "to move (house)",
+          "fr": "déménager"
+        },
+        {
+          "en": "to get married",
+          "fr": "se marier"
+        },
+        {
+          "en": "to graduate",
+          "fr": "obtenir son diplôme"
+        },
+        {
+          "en": "childhood",
+          "fr": "enfance"
+        },
+        {
+          "en": "ago",
+          "fr": "il y a (temps)"
+        },
+        {
+          "en": "last week",
+          "fr": "la semaine dernière"
+        },
+        {
+          "en": "last year",
+          "fr": "l'année dernière"
+        },
+        {
+          "en": "the day before yesterday",
+          "fr": "avant-hier"
+        },
+        {
+          "en": "first",
+          "fr": "d'abord"
+        },
+        {
+          "en": "then",
+          "fr": "ensuite, puis"
+        },
+        {
+          "en": "after that",
+          "fr": "après ça"
+        },
+        {
+          "en": "finally",
+          "fr": "enfin, pour finir"
+        },
+        {
+          "en": "went",
+          "fr": "allé (prétérit de go)"
+        },
+        {
+          "en": "saw",
+          "fr": "vu (prétérit de see)"
+        },
+        {
+          "en": "took",
+          "fr": "pris (prétérit de take)"
+        },
+        {
+          "en": "bought",
+          "fr": "acheté (prétérit de buy)"
+        },
+        {
+          "en": "thought",
+          "fr": "pensé (prétérit de think)"
+        },
+        {
+          "en": "brought",
+          "fr": "apporté (prétérit de bring)"
+        },
+        {
+          "en": "met",
+          "fr": "rencontré (prétérit de meet)"
+        },
+        {
+          "en": "left",
+          "fr": "parti, laissé (prétérit de leave)"
+        },
+        {
+          "en": "felt",
+          "fr": "ressenti (prétérit de feel)"
+        },
+        {
+          "en": "spent",
+          "fr": "passé, dépensé (prétérit de spend)"
+        },
+        {
+          "en": "forgot",
+          "fr": "oublié (prétérit de forget)"
+        },
+        {
+          "en": "lost",
+          "fr": "perdu (prétérit de lose)"
+        },
+        {
+          "en": "won",
+          "fr": "gagné (prétérit de win)"
+        },
+        {
+          "en": "wrote",
+          "fr": "écrit (prétérit de write)"
+        },
+        {
+          "en": "chose",
+          "fr": "choisi (prétérit de choose)"
+        },
+        {
+          "en": "event",
+          "fr": "événement"
+        },
+        {
+          "en": "concert",
+          "fr": "concert"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    },
+    {
+      "id": "debutant-module-7",
+      "titre": "Comparer et décrire",
+      "niveau": "A2",
+      "cartes": [
+        {
+          "en": "health",
+          "fr": "santé"
+        },
+        {
+          "en": "headache",
+          "fr": "mal de tête"
+        },
+        {
+          "en": "stomachache",
+          "fr": "mal au ventre"
+        },
+        {
+          "en": "sore throat",
+          "fr": "mal de gorge"
+        },
+        {
+          "en": "a cold",
+          "fr": "un rhume"
+        },
+        {
+          "en": "fever",
+          "fr": "fièvre"
+        },
+        {
+          "en": "medicine",
+          "fr": "médicament"
+        },
+        {
+          "en": "appointment",
+          "fr": "rendez-vous"
+        },
+        {
+          "en": "advice",
+          "fr": "conseil(s)"
+        },
+        {
+          "en": "you should",
+          "fr": "tu devrais"
+        },
+        {
+          "en": "you must",
+          "fr": "tu dois"
+        },
+        {
+          "en": "you don't have to",
+          "fr": "tu n'es pas obligé de"
+        },
+        {
+          "en": "tall",
+          "fr": "grand (taille)"
+        },
+        {
+          "en": "short",
+          "fr": "petit, court"
+        },
+        {
+          "en": "slim",
+          "fr": "mince"
+        },
+        {
+          "en": "young",
+          "fr": "jeune"
+        },
+        {
+          "en": "old",
+          "fr": "vieux, âgé"
+        },
+        {
+          "en": "beard",
+          "fr": "barbe"
+        },
+        {
+          "en": "curly hair",
+          "fr": "cheveux bouclés"
+        },
+        {
+          "en": "straight hair",
+          "fr": "cheveux raides"
+        },
+        {
+          "en": "friendly",
+          "fr": "sympathique"
+        },
+        {
+          "en": "shy",
+          "fr": "timide"
+        },
+        {
+          "en": "funny",
+          "fr": "drôle"
+        },
+        {
+          "en": "patient",
+          "fr": "patient"
+        },
+        {
+          "en": "hard-working",
+          "fr": "travailleur"
+        },
+        {
+          "en": "lazy",
+          "fr": "paresseux"
+        },
+        {
+          "en": "reliable",
+          "fr": "fiable"
+        },
+        {
+          "en": "rude",
+          "fr": "impoli"
+        },
+        {
+          "en": "kind",
+          "fr": "gentil"
+        },
+        {
+          "en": "better",
+          "fr": "meilleur, mieux"
+        },
+        {
+          "en": "the best",
+          "fr": "le meilleur"
+        },
+        {
+          "en": "worse",
+          "fr": "pire"
+        },
+        {
+          "en": "the worst",
+          "fr": "le pire"
+        },
+        {
+          "en": "bigger",
+          "fr": "plus grand"
+        },
+        {
+          "en": "smaller",
+          "fr": "plus petit"
+        },
+        {
+          "en": "heavier",
+          "fr": "plus lourd"
+        },
+        {
+          "en": "lighter",
+          "fr": "plus léger"
+        },
+        {
+          "en": "faster",
+          "fr": "plus rapide"
+        },
+        {
+          "en": "slower",
+          "fr": "plus lent"
+        },
+        {
+          "en": "as… as",
+          "fr": "aussi… que"
+        },
+        {
+          "en": "well",
+          "fr": "bien"
+        },
+        {
+          "en": "quietly",
+          "fr": "calmement, doucement"
+        }
+      ],
+      "phrases": [],
+      "miniLecon": null
+    }
+  ]
+}

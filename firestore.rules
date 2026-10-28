@@ -32,6 +32,11 @@ service cloud.firestore {
       );
     }
 
+    // La progression d'un utilisateur dans les leçons : seulement lui.
+    match /users/{uid}/progress/{id} {
+      allow read, write: if estConnecte() && request.auth.uid == uid;
+    }
+
     // La réservation d'un pseudo : une fois pris, il ne change plus.
     match /pseudos/{pseudo} {
       allow read: if estConnecte();
