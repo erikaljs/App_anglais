@@ -38,8 +38,14 @@ class AuthService {
   static String _emailPourPseudo(String pseudoMinuscule) =>
       '$pseudoMinuscule@mon-anglais.local';
 
-  /// Crée un nouveau compte : réserve le pseudo, crée le compte Firebase Auth,
-  /// génère un code ami, puis enregistre le profil dans Firestore.
+  /// Crée un nouveau compte : crée d'abord le compte Firebase Auth (qui
+  /// garantit déjà qu'aucun autre compte n'utilise ce pseudo, puisque
+  /// l'e-mail "coulisse" en dépend), puis réserve le pseudo, génère un
+  /// code ami et enregistre le profil dans Firestore.
+  ///
+  /// On crée le compte Auth en premier (et pas le pseudo) car les règles
+  /// de sécurité Firestore exigent d'être connecté pour écrire : tant que
+  /// le compte n'existe pas, on n'est pas encore authentifié.
   static Future<void> inscription({
     required String pseudo,
     required String motDePasse,
@@ -51,17 +57,6 @@ class AuthService {
       );
     }
     final pseudoMinuscule = pseudoPropre.toLowerCase();
-    final refPseudo = _db.collection('pseudos').doc(pseudoMinuscule);
-
-    // 1. On réserve le pseudo tout de suite, pour que personne d'autre ne
-    //    puisse le prendre pendant qu'on crée le compte.
-    await _db.runTransaction((transaction) async {
-      final document = await transaction.get(refPseudo);
-      if (document.exists) {
-        throw const AuthException('Ce pseudo est déjà pris.');
-      }
-      transaction.set(refPseudo, {'uid': '_reservation'});
-    });
 
     UserCredential identifiants;
     try {
@@ -70,30 +65,48 @@ class AuthService {
         password: motDePasse,
       );
     } catch (erreur) {
-      // La création du compte a échoué : on annule la réservation du pseudo.
-      await refPseudo.delete();
       throw AuthException(_messageErreur(erreur));
     }
 
     final uid = identifiants.user!.uid;
-    final codeAmi = await _genererCodeAmiUnique();
 
-    // 2. On enregistre tout en une fois : le pseudo, le code ami et le profil.
-    final lot = _db.batch();
-    lot.set(refPseudo, {'uid': uid});
-    lot.set(_db.collection('codesAmis').doc(codeAmi), {'uid': uid});
-    lot.set(_db.collection('users').doc(uid), {
-      'pseudo': pseudoPropre,
-      'codeAmi': codeAmi,
-      'avatar': 'etoile',
-      'xp': 0,
-      'serieJours': 0,
-      'derniereActivite': FieldValue.serverTimestamp(),
-      'dateInscription': FieldValue.serverTimestamp(),
-      'amis': <String>[],
-      'bloques': <String>[],
-    });
-    await lot.commit();
+    try {
+      final refPseudo = _db.collection('pseudos').doc(pseudoMinuscule);
+
+      // On réserve le pseudo dans une transaction (par sécurité, même si
+      // Firebase Auth a déjà empêché deux comptes d'avoir le même pseudo).
+      await _db.runTransaction((transaction) async {
+        final document = await transaction.get(refPseudo);
+        if (document.exists) {
+          throw const AuthException('Ce pseudo est déjà pris.');
+        }
+        transaction.set(refPseudo, {'uid': uid});
+      });
+
+      final codeAmi = await _genererCodeAmiUnique();
+
+      final lot = _db.batch();
+      lot.set(_db.collection('codesAmis').doc(codeAmi), {'uid': uid});
+      lot.set(_db.collection('users').doc(uid), {
+        'pseudo': pseudoPropre,
+        'codeAmi': codeAmi,
+        'avatar': 'etoile',
+        'xp': 0,
+        'serieJours': 0,
+        'derniereActivite': FieldValue.serverTimestamp(),
+        'dateInscription': FieldValue.serverTimestamp(),
+        'amis': <String>[],
+        'bloques': <String>[],
+      });
+      await lot.commit();
+    } catch (erreur) {
+      // L'enregistrement du profil a échoué après la création du compte :
+      // on supprime le compte pour ne pas laisser un compte "fantôme"
+      // sans profil.
+      await identifiants.user?.delete();
+      if (erreur is AuthException) rethrow;
+      throw AuthException(_messageErreur(erreur));
+    }
   }
 
   /// Essaie plusieurs codes au hasard jusqu'à en trouver un qui n'existe pas encore.

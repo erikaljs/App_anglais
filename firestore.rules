@@ -1,0 +1,74 @@
+rules_version = '2';
+
+// Règles de sécurité Firestore. Voir CLAUDE.md pour le détail des
+// collections. Ces règles sont complétées à chaque étape du projet :
+// pour l'instant, seules les collections des comptes et des amis
+// (étape 2) sont couvertes.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Le profil d'un utilisateur. Tout le monde connecté peut le lire
+    // (nécessaire pour afficher le pseudo d'un ami, par exemple), mais
+    // seul le propriétaire peut le modifier...
+    match /users/{uid} {
+      allow read: if estConnecte();
+      allow create: if estConnecte() && request.auth.uid == uid;
+      allow delete: if false;
+
+      // ... sauf pour la liste "amis" : accepter une demande d'ami ajoute
+      // aussi notre uid dans la liste de l'autre personne. On l'autorise
+      // uniquement si : seul le champ "amis" change, on ajoute exactement
+      // un élément (le nôtre), rien n'est supprimé, et une demande d'ami
+      // a bien été acceptée entre les deux.
+      allow update: if estConnecte() && (
+        request.auth.uid == uid ||
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['amis']) &&
+          request.resource.data.amis.hasAll(resource.data.amis) &&
+          request.resource.data.amis.hasAll([request.auth.uid]) &&
+          request.resource.data.amis.size() == resource.data.amis.size() + 1 &&
+          existeDemandeAcceptee(uid, request.auth.uid)
+        )
+      );
+    }
+
+    // La réservation d'un pseudo : une fois pris, il ne change plus.
+    match /pseudos/{pseudo} {
+      allow read: if estConnecte();
+      allow create: if estConnecte() && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // Le code ami d'un utilisateur : une fois créé, il ne change plus.
+    match /codesAmis/{code} {
+      allow read: if estConnecte();
+      allow create: if estConnecte() && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // Une demande d'ami : lisible et modifiable seulement par les deux
+    // personnes concernées (celle qui envoie et celle qui reçoit).
+    match /friendRequests/{id} {
+      allow read: if estConnecte() && estParticipantDemande();
+      allow create: if estConnecte() && request.resource.data.de == request.auth.uid
+        && request.resource.data.statut == 'en_attente';
+      allow update: if estConnecte() && estParticipantDemande()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['statut'])
+        && request.resource.data.statut in ['acceptee', 'refusee'];
+      allow delete: if false;
+    }
+
+    function estConnecte() {
+      return request.auth != null;
+    }
+
+    function estParticipantDemande() {
+      return resource.data.de == request.auth.uid || resource.data.vers == request.auth.uid;
+    }
+
+    function existeDemandeAcceptee(deUid, versUid) {
+      let chemin = /databases/$(database)/documents/friendRequests/$(deUid + '_' + versUid);
+      return exists(chemin) && get(chemin).data.statut == 'acceptee';
+    }
+  }
+}
