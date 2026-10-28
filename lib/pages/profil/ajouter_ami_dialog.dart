@@ -43,10 +43,13 @@ class _AjouterAmiDialogState extends State<_AjouterAmiDialog> {
         );
       }
     } catch (erreur) {
+      // En temps normal, UserService renvoie une UserServiceException
+      // avec un message clair. Si on arrive ici avec autre chose (une
+      // erreur Firestore, par exemple), on l'affiche telle quelle plutôt
+      // que de cacher l'information derrière un message vague.
+      debugPrint('Ajout ami : erreur reçue : $erreur');
       setState(() {
-        _erreur = erreur is UserServiceException
-            ? erreur.message
-            : 'Une erreur est survenue.';
+        _erreur = erreur is UserServiceException ? erreur.message : '$erreur';
       });
     } finally {
       if (mounted) setState(() => _enCours = false);

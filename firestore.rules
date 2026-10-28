@@ -32,7 +32,12 @@ service cloud.firestore {
     // Un paquet perso : son propriétaire peut tout faire. Un ami peut le
     // lire seulement s'il est visible "amis" (pas s'il est "prive").
     match /users/{uid}/decks/{deckId} {
+      // "resource == null" : le paquet n'existe pas (plus) — par exemple
+      // un paquet suivi qui a été supprimé. Sans ce cas, Firestore refuse
+      // la simple vérification "existe-t-il ?" avec une erreur de
+      // permission au lieu de répondre juste "non".
       allow read: if estConnecte() && (
+        resource == null ||
         request.auth.uid == uid ||
         (resource.data.visibilite == 'amis' && estAmiDe(uid))
       );
@@ -47,7 +52,8 @@ service cloud.firestore {
     // Une partie (Words ou Memory) : lisible et modifiable seulement
     // par les joueurs qui y participent.
     match /games/{id} {
-      allow read, update: if estConnecte() && request.auth.uid in resource.data.joueurs;
+      allow read: if estConnecte() && (resource == null || request.auth.uid in resource.data.joueurs);
+      allow update: if estConnecte() && request.auth.uid in resource.data.joueurs;
       allow create: if estConnecte() && request.auth.uid in request.resource.data.joueurs;
       allow delete: if false;
     }
@@ -69,7 +75,12 @@ service cloud.firestore {
     // Une demande d'ami : lisible et modifiable seulement par les deux
     // personnes concernées (celle qui envoie et celle qui reçoit).
     match /friendRequests/{id} {
-      allow read: if estConnecte() && estParticipantDemande();
+      // "resource == null" : la demande n'existe pas encore. C'est le
+      // cas la première fois que deux personnes essaient de devenir
+      // amies (on vérifie "une demande existe-t-elle déjà ?" avant d'en
+      // créer une) — sans ce cas, Firestore refuse cette simple lecture
+      // avec une erreur de permission au lieu de répondre juste "non".
+      allow read: if estConnecte() && (resource == null || estParticipantDemande());
 
       // L'identifiant du document doit être exactement "de_vers", et on ne
       // peut pas s'envoyer une demande à soi-même.
