@@ -50,9 +50,17 @@ service cloud.firestore {
     // personnes concernées (celle qui envoie et celle qui reçoit).
     match /friendRequests/{id} {
       allow read: if estConnecte() && estParticipantDemande();
+
+      // L'identifiant du document doit être exactement "de_vers", et on ne
+      // peut pas s'envoyer une demande à soi-même.
       allow create: if estConnecte() && request.resource.data.de == request.auth.uid
+        && request.resource.data.vers != request.resource.data.de
+        && id == request.resource.data.de + '_' + request.resource.data.vers
         && request.resource.data.statut == 'en_attente';
-      allow update: if estConnecte() && estParticipantDemande()
+
+      // Seul le destinataire (vers) peut répondre à la demande : l'expéditeur
+      // ne peut pas accepter (ni refuser) sa propre demande.
+      allow update: if estConnecte() && resource.data.vers == request.auth.uid
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['statut'])
         && request.resource.data.statut in ['acceptee', 'refusee'];
       allow delete: if false;
