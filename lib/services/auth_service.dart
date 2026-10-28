@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 /// Erreur d'inscription ou de connexion, avec un message déjà en français
 /// et compréhensible, prêt à être affiché à l'écran.
@@ -100,10 +101,21 @@ class AuthService {
       });
       await lot.commit();
     } catch (erreur) {
+      debugPrint('Inscription : échec après création du compte Auth : $erreur');
+
       // L'enregistrement du profil a échoué après la création du compte :
       // on supprime le compte pour ne pas laisser un compte "fantôme"
-      // sans profil.
-      await identifiants.user?.delete();
+      // sans profil. On protège cette suppression par son propre
+      // try/catch : si elle échoue à son tour, on ne veut pas perdre
+      // l'erreur d'origine (celle qui nous intéresse vraiment).
+      try {
+        await identifiants.user?.delete();
+      } catch (erreurSuppression) {
+        debugPrint(
+          'Inscription : impossible de supprimer le compte fantôme : $erreurSuppression',
+        );
+      }
+
       if (erreur is AuthException) rethrow;
       throw AuthException(_messageErreur(erreur));
     }
@@ -148,8 +160,17 @@ class AuthService {
   static Future<void> deconnexion() => _auth.signOut();
 
   /// Traduit les erreurs techniques de Firebase en phrases compréhensibles.
+  ///
+  /// Quand on ne connaît pas l'erreur précisément (ou qu'elle vient de
+  /// Firestore, pas de la connexion), on affiche quand même son vrai code
+  /// technique plutôt qu'un message vague : ça permet de comprendre ce qui
+  /// se passe au lieu de deviner. Toute erreur est aussi écrite dans la
+  /// console avec debugPrint, pour la retrouver pendant le développement.
   static String _messageErreur(Object erreur) {
+    debugPrint('Erreur Firebase : $erreur');
+
     if (erreur is FirebaseAuthException) {
+      debugPrint('  code = ${erreur.code}, message = ${erreur.message}');
       switch (erreur.code) {
         case 'email-already-in-use':
           return 'Ce pseudo est déjà pris.';
@@ -164,9 +185,18 @@ class AuthService {
         case 'invalid-email':
           return 'Ce pseudo n\'est pas valide.';
         default:
-          return 'Une erreur est survenue (${erreur.code}).';
+          return 'Erreur de connexion (${erreur.code}) : ${erreur.message}';
       }
     }
-    return 'Une erreur est survenue. Vérifie ta connexion internet.';
+
+    // Erreur venant de Firestore (ex : permission-denied, unavailable...).
+    if (erreur is FirebaseException) {
+      debugPrint(
+        '  plugin = ${erreur.plugin}, code = ${erreur.code}, message = ${erreur.message}',
+      );
+      return 'Erreur Firestore (${erreur.code}) : ${erreur.message}';
+    }
+
+    return 'Erreur inattendue : $erreur';
   }
 }

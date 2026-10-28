@@ -53,10 +53,13 @@ class _ConnexionPageState extends State<ConnexionPage> {
         );
       }
     } catch (erreur) {
+      // En temps normal, AuthService transforme toujours l'erreur en
+      // AuthException avec un message clair. Si on arrive quand même ici
+      // avec autre chose, on l'affiche telle quelle plutôt que de cacher
+      // l'information derrière un message vague.
+      debugPrint('Écran de connexion : erreur reçue : $erreur');
       setState(() {
-        _erreur = erreur is AuthException
-            ? erreur.message
-            : 'Une erreur est survenue.';
+        _erreur = erreur is AuthException ? erreur.message : '$erreur';
       });
     } finally {
       if (mounted) setState(() => _enCours = false);
