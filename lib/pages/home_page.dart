@@ -5,7 +5,7 @@ import '../modeles/contenu.dart';
 import '../services/contenu_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_colors.dart';
-import 'apprentissage/cartes_page.dart';
+import 'apprentissage/exercices_lecon_page.dart';
 import 'apprentissage/liste_lecons_page.dart';
 
 /// Page d'accueil : une tuile par catégorie, avec sa barre de progression
@@ -153,7 +153,7 @@ class _TuileCategorie extends StatelessWidget {
                   child: TextButton.icon(
                     onPressed: () => Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => CartesPage(lecon: prochaineLecon),
+                        builder: (context) => ExercicesLeconPage(lecon: prochaineLecon),
                       ),
                     ),
                     icon: const Icon(Icons.play_arrow),

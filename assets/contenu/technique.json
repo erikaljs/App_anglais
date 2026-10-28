@@ -20,7 +20,32 @@
           "fr": "postuler à"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "J'habite à Bordeaux depuis trois ans.",
+          "en": [
+            "I've lived in Bordeaux for three years."
+          ]
+        },
+        {
+          "fr": "Tu as déjà travaillé avec des robots ?",
+          "en": [
+            "Have you ever worked with robots?"
+          ]
+        },
+        {
+          "fr": "Je viens de recevoir ton mail.",
+          "en": [
+            "I've just received your email."
+          ]
+        },
+        {
+          "fr": "Il n'a pas encore répondu.",
+          "en": [
+            "He hasn't answered yet."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -33,7 +58,32 @@
           "fr": "tomber en panne"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Je dormais quand le réveil a sonné.",
+          "en": [
+            "I was sleeping when the alarm went off."
+          ]
+        },
+        {
+          "fr": "En fait, je ne suis pas d'accord.",
+          "en": [
+            "Actually, I don't agree."
+          ]
+        },
+        {
+          "fr": "Pendant que je cuisinais, il a mis la table.",
+          "en": [
+            "While I was cooking, he set the table."
+          ]
+        },
+        {
+          "fr": "Avant, on allait à la plage tous les étés.",
+          "en": [
+            "We used to go to the beach every summer."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -98,7 +148,32 @@
           "fr": "éteindre"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Si tu as besoin d'aide, appelle-moi.",
+          "en": [
+            "If you need help, call me."
+          ]
+        },
+        {
+          "fr": "Je serai en réunion à 15 h.",
+          "en": [
+            "I'll be in a meeting at 3 p.m."
+          ]
+        },
+        {
+          "fr": "Si le projet est validé, nous commencerons en janvier.",
+          "en": [
+            "If the project is approved, we'll start in January."
+          ]
+        },
+        {
+          "fr": "Je pense apprendre l'allemand.",
+          "en": [
+            "I'm thinking of learning German."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -291,7 +366,32 @@
           "fr": "reprendre (en charge)"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Je reviens vers vous demain.",
+          "en": [
+            "I'll get back to you tomorrow."
+          ]
+        },
+        {
+          "fr": "Pourriez-vous me dire quand la livraison est prévue ?",
+          "en": [
+            "Could you tell me when the delivery is planned?"
+          ]
+        },
+        {
+          "fr": "Veuillez trouver ci-joint le rapport.",
+          "en": [
+            "Please find attached the report."
+          ]
+        },
+        {
+          "fr": "Nous avons effectué des tests la semaine dernière.",
+          "en": [
+            "We carried out tests last week."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -480,7 +580,33 @@
           "fr": "largeur"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Les pièces sont fabriquées en France.",
+          "en": [
+            "The parts are made in France."
+          ]
+        },
+        {
+          "fr": "Le moteur a été remplacé.",
+          "en": [
+            "The motor has been replaced.",
+            "was replaced"
+          ]
+        },
+        {
+          "fr": "Ce capteur sert à mesurer la distance.",
+          "en": [
+            "This sensor is used to measure distance."
+          ]
+        },
+        {
+          "fr": "Le colis sera livré demain.",
+          "en": [
+            "The parcel will be delivered tomorrow."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -569,7 +695,32 @@
           "fr": "résultat, issue"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Je travaille sur ce projet depuis six mois.",
+          "en": [
+            "I've been working on this project for six months."
+          ]
+        },
+        {
+          "fr": "Quand le client a appelé, nous avions déjà corrigé l'erreur.",
+          "en": [
+            "When the client called, we had already fixed the error."
+          ]
+        },
+        {
+          "fr": "Ça fait combien de temps que tu apprends l'anglais ?",
+          "en": [
+            "How long have you been learning English?"
+          ]
+        },
+        {
+          "fr": "Nous avions prévu de livrer en mars.",
+          "en": [
+            "We had planned to deliver in March."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -598,7 +749,32 @@
           "fr": "faisable"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Si j'étais toi, je parlerais au manager.",
+          "en": [
+            "If I were you, I'd talk to the manager."
+          ]
+        },
+        {
+          "fr": "Si nous avions su, nous aurions changé le planning.",
+          "en": [
+            "If we had known, we would have changed the schedule."
+          ]
+        },
+        {
+          "fr": "J'aurais dû vérifier le fichier.",
+          "en": [
+            "I should have checked the file."
+          ]
+        },
+        {
+          "fr": "Avec du recul, c'était la bonne décision.",
+          "en": [
+            "In hindsight, it was the right decision."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -864,7 +1040,33 @@
           "fr": "dépanner, diagnostiquer"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Le système doit s'arrêter en moins d'une seconde.",
+          "en": [
+            "The system shall stop within one second.",
+            "must stop in less than one second"
+          ]
+        },
+        {
+          "fr": "La carte a été reconçue le mois dernier.",
+          "en": [
+            "The board was redesigned last month."
+          ]
+        },
+        {
+          "fr": "Ça doit être un faux contact.",
+          "en": [
+            "It must be a loose connection."
+          ]
+        },
+        {
+          "fr": "Le correctif sera déployé vendredi.",
+          "en": [
+            "The fix will be deployed on Friday."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -973,7 +1175,32 @@
           "fr": "rentable"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Bien que le délai soit court, nous ferons de notre mieux.",
+          "en": [
+            "Although the deadline is short, we'll do our best."
+          ]
+        },
+        {
+          "fr": "Nous pourrions accepter, à condition que vous confirmiez aujourd'hui.",
+          "en": [
+            "We could accept, provided that you confirm today."
+          ]
+        },
+        {
+          "fr": "En contrepartie, nous aurions besoin d'un acompte.",
+          "en": [
+            "In return, we would need a deposit."
+          ]
+        },
+        {
+          "fr": "Je comprends votre inquiétude.",
+          "en": [
+            "I understand your concern."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -986,7 +1213,32 @@
           "fr": "faire un point"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Plus on teste tôt, moins ça coûte cher.",
+          "en": [
+            "The earlier you test, the cheaper it is."
+          ]
+        },
+        {
+          "fr": "Je préférerais travailler à distance demain.",
+          "en": [
+            "I'd rather work remotely tomorrow."
+          ]
+        },
+        {
+          "fr": "Faisons un point la semaine prochaine.",
+          "en": [
+            "Let's touch base next week."
+          ]
+        },
+        {
+          "fr": "Je m'habitue à parler anglais au travail.",
+          "en": [
+            "I'm getting used to speaking English at work."
+          ]
+        }
+      ],
       "miniLecon": null
     }
   ]

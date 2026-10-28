@@ -12,7 +12,32 @@
           "fr": "entraîneur, coach"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Je m'appelle Léa et j'ai 25 ans.",
+          "en": [
+            "My name is Léa and I'm 25."
+          ]
+        },
+        {
+          "fr": "Il est italien.",
+          "en": [
+            "He's Italian."
+          ]
+        },
+        {
+          "fr": "Vous êtes ingénieurs ?",
+          "en": [
+            "Are you engineers?"
+          ]
+        },
+        {
+          "fr": "Ce n'est pas mon livre.",
+          "en": [
+            "It isn't my book."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -25,7 +50,34 @@
           "fr": "baskets"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Elle ne travaille pas le dimanche.",
+          "en": [
+            "She doesn't work on Sundays."
+          ]
+        },
+        {
+          "fr": "Tu te lèves à quelle heure ?",
+          "en": [
+            "What time do you get up?"
+          ]
+        },
+        {
+          "fr": "Nous allons souvent au restaurant.",
+          "en": [
+            "We often go to the restaurant.",
+            "We often eat out."
+          ]
+        },
+        {
+          "fr": "Il a deux frères.",
+          "en": [
+            "He has two brothers.",
+            "He's got two brothers."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -126,7 +178,32 @@
           "fr": "en bas"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Il y a une boulangerie en face de chez moi.",
+          "en": [
+            "There is a bakery opposite my house."
+          ]
+        },
+        {
+          "fr": "Est-ce que tu sais nager ?",
+          "en": [
+            "Can you swim?"
+          ]
+        },
+        {
+          "fr": "Les clés sont sous le livre.",
+          "en": [
+            "The keys are under the book."
+          ]
+        },
+        {
+          "fr": "C'est la voiture de mon frère.",
+          "en": [
+            "It's my brother's car."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -215,7 +292,32 @@
           "fr": "perdre"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Il pleut, prends un parapluie.",
+          "en": [
+            "It's raining, take an umbrella."
+          ]
+        },
+        {
+          "fr": "J'adore courir le matin.",
+          "en": [
+            "I love running in the morning."
+          ]
+        },
+        {
+          "fr": "Qu'est-ce que tu fais ce soir ?",
+          "en": [
+            "What are you doing tonight?"
+          ]
+        },
+        {
+          "fr": "Je m'ennuie.",
+          "en": [
+            "I'm bored."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -264,7 +366,33 @@
           "fr": "dur, fort (adverbe)"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Ce téléphone est moins cher que l'autre.",
+          "en": [
+            "This phone is cheaper than the other one."
+          ]
+        },
+        {
+          "fr": "Tu devrais faire du sport.",
+          "en": [
+            "You should do some sport.",
+            "You should exercise."
+          ]
+        },
+        {
+          "fr": "Nous ne sommes pas obligés de partir tôt.",
+          "en": [
+            "We don't have to leave early."
+          ]
+        },
+        {
+          "fr": "Il est aussi grand que son père.",
+          "en": [
+            "He's as tall as his father."
+          ]
+        }
+      ],
       "miniLecon": null
     }
   ]

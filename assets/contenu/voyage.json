@@ -20,7 +20,32 @@
           "fr": "aller tout droit"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Il y a une boulangerie en face de chez moi.",
+          "en": [
+            "There is a bakery opposite my house."
+          ]
+        },
+        {
+          "fr": "Est-ce que tu sais nager ?",
+          "en": [
+            "Can you swim?"
+          ]
+        },
+        {
+          "fr": "Les clés sont sous le livre.",
+          "en": [
+            "The keys are under the book."
+          ]
+        },
+        {
+          "fr": "C'est la voiture de mon frère.",
+          "en": [
+            "It's my brother's car."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -37,7 +62,32 @@
           "fr": "parapluie"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Il pleut, prends un parapluie.",
+          "en": [
+            "It's raining, take an umbrella."
+          ]
+        },
+        {
+          "fr": "J'adore courir le matin.",
+          "en": [
+            "I love running in the morning."
+          ]
+        },
+        {
+          "fr": "Qu'est-ce que tu fais ce soir ?",
+          "en": [
+            "What are you doing tonight?"
+          ]
+        },
+        {
+          "fr": "Je m'ennuie.",
+          "en": [
+            "I'm bored."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -114,7 +164,32 @@
           "fr": "château"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Il y a deux ans, j'ai visité l'Espagne.",
+          "en": [
+            "Two years ago, I visited Spain."
+          ]
+        },
+        {
+          "fr": "Hier, je n'ai pas travaillé.",
+          "en": [
+            "Yesterday, I didn't work."
+          ]
+        },
+        {
+          "fr": "Où étais-tu samedi soir ?",
+          "en": [
+            "Where were you on Saturday night?"
+          ]
+        },
+        {
+          "fr": "Nous avons rencontré un client la semaine dernière.",
+          "en": [
+            "We met a client last week."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -371,7 +446,32 @@
           "fr": "cher"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Je voudrais réserver une table pour quatre personnes.",
+          "en": [
+            "I'd like to book a table for four people."
+          ]
+        },
+        {
+          "fr": "Le petit-déjeuner est compris ?",
+          "en": [
+            "Is breakfast included?"
+          ]
+        },
+        {
+          "fr": "Excusez-moi, la gare est loin d'ici ?",
+          "en": [
+            "Excuse me, is the station far from here?"
+          ]
+        },
+        {
+          "fr": "Mon vol est en retard.",
+          "en": [
+            "My flight is delayed."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -400,7 +500,33 @@
           "fr": "réduction"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Ce téléphone est moins cher que l'autre.",
+          "en": [
+            "This phone is cheaper than the other one."
+          ]
+        },
+        {
+          "fr": "Tu devrais faire du sport.",
+          "en": [
+            "You should do some sport.",
+            "You should exercise."
+          ]
+        },
+        {
+          "fr": "Nous ne sommes pas obligés de partir tôt.",
+          "en": [
+            "We don't have to leave early."
+          ]
+        },
+        {
+          "fr": "Il est aussi grand que son père.",
+          "en": [
+            "He's as tall as his father."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -417,7 +543,32 @@
           "fr": "volé, pris l'avion (participe de fly)"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "J'habite à Bordeaux depuis trois ans.",
+          "en": [
+            "I've lived in Bordeaux for three years."
+          ]
+        },
+        {
+          "fr": "Tu as déjà travaillé avec des robots ?",
+          "en": [
+            "Have you ever worked with robots?"
+          ]
+        },
+        {
+          "fr": "Je viens de recevoir ton mail.",
+          "en": [
+            "I've just received your email."
+          ]
+        },
+        {
+          "fr": "Il n'a pas encore répondu.",
+          "en": [
+            "He hasn't answered yet."
+          ]
+        }
+      ],
       "miniLecon": null
     },
     {
@@ -430,7 +581,32 @@
           "fr": "se perdre"
         }
       ],
-      "phrases": [],
+      "phrases": [
+        {
+          "fr": "Je dormais quand le réveil a sonné.",
+          "en": [
+            "I was sleeping when the alarm went off."
+          ]
+        },
+        {
+          "fr": "En fait, je ne suis pas d'accord.",
+          "en": [
+            "Actually, I don't agree."
+          ]
+        },
+        {
+          "fr": "Pendant que je cuisinais, il a mis la table.",
+          "en": [
+            "While I was cooking, he set the table."
+          ]
+        },
+        {
+          "fr": "Avant, on allait à la plage tous les étés.",
+          "en": [
+            "We used to go to the beach every summer."
+          ]
+        }
+      ],
       "miniLecon": null
     }
   ]

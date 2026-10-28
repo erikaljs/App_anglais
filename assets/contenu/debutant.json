@@ -324,8 +324,78 @@
           "fr": "responsable, manager"
         }
       ],
-      "phrases": [],
-      "miniLecon": null
+      "phrases": [
+        {
+          "fr": "Je m'appelle Léa et j'ai 25 ans.",
+          "en": [
+            "My name is Léa and I'm 25."
+          ]
+        },
+        {
+          "fr": "Il est italien.",
+          "en": [
+            "He's Italian."
+          ]
+        },
+        {
+          "fr": "Vous êtes ingénieurs ?",
+          "en": [
+            "Are you engineers?"
+          ]
+        },
+        {
+          "fr": "Ce n'est pas mon livre.",
+          "en": [
+            "It isn't my book."
+          ]
+        }
+      ],
+      "miniLecon": {
+        "regle": "Le verbe \"to be\" (être) sert à dire qui tu es, ton âge, ta nationalité et ton métier : I am (I'm), you are (you're), he/she/it is ('s), we/they are ('re).",
+        "exemples": [
+          "I'm Erika. I'm 21.",
+          "She's French.",
+          "Are you a student? — Yes, I am."
+        ],
+        "qcm": [
+          {
+            "question": "Comment dit-on « Je suis fatiguée » ?",
+            "choix": [
+              "I am tired",
+              "I is tired",
+              "I are tired"
+            ],
+            "bonneReponseIndex": 0
+          },
+          {
+            "question": "Comment dit-on « Il est ingénieur » ?",
+            "choix": [
+              "He is engineer",
+              "He is an engineer",
+              "He am an engineer"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Quelle est la forme courte de \"they are\" ?",
+            "choix": [
+              "they's",
+              "they're",
+              "they'is"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Comment pose-t-on la question « Es-tu étudiant ? » ?",
+            "choix": [
+              "You are a student?",
+              "Is you a student?",
+              "Are you a student?"
+            ],
+            "bonneReponseIndex": 2
+          }
+        ]
+      }
     },
     {
       "id": "debutant-module-2",
@@ -657,8 +727,80 @@
           "fr": "manteau"
         }
       ],
-      "phrases": [],
-      "miniLecon": null
+      "phrases": [
+        {
+          "fr": "Elle ne travaille pas le dimanche.",
+          "en": [
+            "She doesn't work on Sundays."
+          ]
+        },
+        {
+          "fr": "Tu te lèves à quelle heure ?",
+          "en": [
+            "What time do you get up?"
+          ]
+        },
+        {
+          "fr": "Nous allons souvent au restaurant.",
+          "en": [
+            "We often go to the restaurant.",
+            "We often eat out."
+          ]
+        },
+        {
+          "fr": "Il a deux frères.",
+          "en": [
+            "He has two brothers.",
+            "He's got two brothers."
+          ]
+        }
+      ],
+      "miniLecon": {
+        "regle": "Le présent simple sert pour les habitudes et les vérités générales. Avec he/she/it, on ajoute \"-s\" au verbe à l'affirmatif (she works), mais le verbe reste nu avec does/doesn't (she doesn't work, does she work?).",
+        "exemples": [
+          "I get up at 7 a.m.",
+          "He doesn't drink coffee.",
+          "Do you live in Bordeaux? — Yes, I do."
+        ],
+        "qcm": [
+          {
+            "question": "Complète : \"She ___ TV every evening.\"",
+            "choix": [
+              "watch",
+              "watches",
+              "is watching"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Comment dit-on « Il ne boit pas de café » ?",
+            "choix": [
+              "He don't drinks coffee",
+              "He doesn't drink coffee",
+              "He not drink coffee"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Où placer \"always\" dans \"I am late\" ?",
+            "choix": [
+              "I'm always late",
+              "I always am late",
+              "Always I'm late"
+            ],
+            "bonneReponseIndex": 0
+          },
+          {
+            "question": "Quelle préposition pour un jour précis : \"___ Monday\" ?",
+            "choix": [
+              "at",
+              "in",
+              "on"
+            ],
+            "bonneReponseIndex": 2
+          }
+        ]
+      }
     },
     {
       "id": "debutant-module-3",
@@ -862,8 +1004,78 @@
           "fr": "fermer"
         }
       ],
-      "phrases": [],
-      "miniLecon": null
+      "phrases": [
+        {
+          "fr": "Il y a une boulangerie en face de chez moi.",
+          "en": [
+            "There is a bakery opposite my house."
+          ]
+        },
+        {
+          "fr": "Est-ce que tu sais nager ?",
+          "en": [
+            "Can you swim?"
+          ]
+        },
+        {
+          "fr": "Les clés sont sous le livre.",
+          "en": [
+            "The keys are under the book."
+          ]
+        },
+        {
+          "fr": "C'est la voiture de mon frère.",
+          "en": [
+            "It's my brother's car."
+          ]
+        }
+      ],
+      "miniLecon": {
+        "regle": "\"There is\" + singulier, \"there are\" + pluriel, pour dire qu'il y a quelque chose. On utilise \"some\" à l'affirmatif et \"any\" au négatif ou à la question.",
+        "exemples": [
+          "There is a park near my house.",
+          "There aren't any buses.",
+          "Are there any restaurants?"
+        ],
+        "qcm": [
+          {
+            "question": "\"___ a supermarket near here.\"",
+            "choix": [
+              "There is",
+              "There are",
+              "Is there"
+            ],
+            "bonneReponseIndex": 0
+          },
+          {
+            "question": "\"___ three bedrooms.\"",
+            "choix": [
+              "There is",
+              "There are",
+              "Are there"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Comment dit-on « sous le livre » ?",
+            "choix": [
+              "on the book",
+              "under the book",
+              "between the book"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "\"The cat eats ___ food.\" (son, sa, à lui/elle pour une chose)",
+            "choix": [
+              "it's",
+              "its",
+              "his"
+            ],
+            "bonneReponseIndex": 1
+          }
+        ]
+      }
     },
     {
       "id": "debutant-module-4",
@@ -1023,8 +1235,78 @@
           "fr": "effrayé"
         }
       ],
-      "phrases": [],
-      "miniLecon": null
+      "phrases": [
+        {
+          "fr": "Il pleut, prends un parapluie.",
+          "en": [
+            "It's raining, take an umbrella."
+          ]
+        },
+        {
+          "fr": "J'adore courir le matin.",
+          "en": [
+            "I love running in the morning."
+          ]
+        },
+        {
+          "fr": "Qu'est-ce que tu fais ce soir ?",
+          "en": [
+            "What are you doing tonight?"
+          ]
+        },
+        {
+          "fr": "Je m'ennuie.",
+          "en": [
+            "I'm bored."
+          ]
+        }
+      ],
+      "miniLecon": {
+        "regle": "Le présent continu (\"be\" + verbe-ing) sert pour une action en train de se faire maintenant, ou une situation temporaire.",
+        "exemples": [
+          "I'm working.",
+          "Are you coming?",
+          "It's raining."
+        ],
+        "qcm": [
+          {
+            "question": "Complète : \"Look! It ___ (snow).\"",
+            "choix": [
+              "snows",
+              "is snowing",
+              "snow"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Quel verbe ne va presque jamais au présent continu ?",
+            "choix": [
+              "run",
+              "know",
+              "eat"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Ce que TU ressens se dit avec quelle terminaison ?",
+            "choix": [
+              "-ing (ex : boring)",
+              "-ed (ex : bored)",
+              "-s (ex : bores)"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Comment dit-on « Qu'est-ce que tu fais ce soir ? » ?",
+            "choix": [
+              "What do you do tonight?",
+              "What you are doing tonight?",
+              "What are you doing tonight?"
+            ],
+            "bonneReponseIndex": 2
+          }
+        ]
+      }
     },
     {
       "id": "debutant-module-5",
@@ -1180,8 +1462,77 @@
           "fr": "concert"
         }
       ],
-      "phrases": [],
-      "miniLecon": null
+      "phrases": [
+        {
+          "fr": "Il y a deux ans, j'ai visité l'Espagne.",
+          "en": [
+            "Two years ago, I visited Spain."
+          ]
+        },
+        {
+          "fr": "Hier, je n'ai pas travaillé.",
+          "en": [
+            "Yesterday, I didn't work."
+          ]
+        },
+        {
+          "fr": "Où étais-tu samedi soir ?",
+          "en": [
+            "Where were you on Saturday night?"
+          ]
+        },
+        {
+          "fr": "Nous avons rencontré un client la semaine dernière.",
+          "en": [
+            "We met a client last week."
+          ]
+        }
+      ],
+      "miniLecon": {
+        "regle": "Pour raconter le passé : \"was/were\" pour \"être\", et \"-ed\" pour les verbes réguliers (même forme à toutes les personnes). Négatif et question avec \"did\" + verbe nu.",
+        "exemples": [
+          "I was tired.",
+          "I visited Rome.",
+          "Did you call your mother?"
+        ],
+        "qcm": [
+          {
+            "question": "Complète : \"I ___ (go) to Paris last weekend.\"",
+            "choix": [
+              "goed",
+              "went",
+              "go"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Comment former le négatif au passé ?",
+            "choix": [
+              "didn't + verbe nu",
+              "not + verbe-ed",
+              "didn't + verbe-ed"
+            ],
+            "bonneReponseIndex": 0
+          },
+          {
+            "question": "Où placer \"ago\" (\"il y a\") ?",
+            "choix": [
+              "avant la durée : ago three years",
+              "après la durée : three years ago"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Complète : \"Where ___ you yesterday?\"",
+            "choix": [
+              "was",
+              "were",
+              "are"
+            ],
+            "bonneReponseIndex": 1
+          }
+        ]
+      }
     },
     {
       "id": "debutant-module-7",
@@ -1357,8 +1708,79 @@
           "fr": "calmement, doucement"
         }
       ],
-      "phrases": [],
-      "miniLecon": null
+      "phrases": [
+        {
+          "fr": "Ce téléphone est moins cher que l'autre.",
+          "en": [
+            "This phone is cheaper than the other one."
+          ]
+        },
+        {
+          "fr": "Tu devrais faire du sport.",
+          "en": [
+            "You should do some sport.",
+            "You should exercise."
+          ]
+        },
+        {
+          "fr": "Nous ne sommes pas obligés de partir tôt.",
+          "en": [
+            "We don't have to leave early."
+          ]
+        },
+        {
+          "fr": "Il est aussi grand que son père.",
+          "en": [
+            "He's as tall as his father."
+          ]
+        }
+      ],
+      "miniLecon": {
+        "regle": "Pour comparer : adjectif court + \"-er\" (faster), adjectif long + \"more\" (more expensive), irréguliers (better, worse). Pour conseiller : \"should\" ; \"mustn't\" = interdit ; \"don't have to\" = pas obligé.",
+        "exemples": [
+          "This laptop is lighter than mine.",
+          "You should drink more water.",
+          "You don't have to come."
+        ],
+        "qcm": [
+          {
+            "question": "Complète : \"A plane is ___ (fast) than a train.\"",
+            "choix": [
+              "more fast",
+              "faster",
+              "fastest"
+            ],
+            "bonneReponseIndex": 1
+          },
+          {
+            "question": "Complète : \"It's ___ (expensive) hotel in the city.\"",
+            "choix": [
+              "the expensivest",
+              "more expensive",
+              "the most expensive"
+            ],
+            "bonneReponseIndex": 2
+          },
+          {
+            "question": "\"mustn't\" veut dire :",
+            "choix": [
+              "interdit",
+              "pas obligé",
+              "conseillé"
+            ],
+            "bonneReponseIndex": 0
+          },
+          {
+            "question": "Comment dit-on « Tu devrais faire du sport » ?",
+            "choix": [
+              "You must do some sport",
+              "You can do some sport",
+              "You should do some sport"
+            ],
+            "bonneReponseIndex": 2
+          }
+        ]
+      }
     }
   ]
 }

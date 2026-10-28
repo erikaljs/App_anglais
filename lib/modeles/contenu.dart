@@ -22,20 +22,24 @@ class Categorie {
   }
 }
 
-/// Une leçon : un ensemble de cartes (et plus tard, des phrases et une
-/// mini-leçon).
+/// Une leçon : ses cartes, ses phrases à traduire, et (parfois) une
+/// mini-leçon.
 class Lecon {
   const Lecon({
     required this.id,
     required this.titre,
     required this.niveau,
     required this.cartes,
+    required this.phrases,
+    this.miniLecon,
   });
 
   final String id;
   final String titre;
   final String niveau;
   final List<Carte> cartes;
+  final List<Phrase> phrases;
+  final MiniLecon? miniLecon;
 
   factory Lecon.fromJson(Map<String, dynamic> json) {
     return Lecon(
@@ -45,6 +49,12 @@ class Lecon {
       cartes: [
         for (final c in (json['cartes'] as List)) Carte.fromJson(c),
       ],
+      phrases: [
+        for (final p in (json['phrases'] as List? ?? const [])) Phrase.fromJson(p),
+      ],
+      miniLecon: json['miniLecon'] != null
+          ? MiniLecon.fromJson(json['miniLecon'] as Map<String, dynamic>)
+          : null,
     );
   }
 }
@@ -58,5 +68,67 @@ class Carte {
 
   factory Carte.fromJson(Map<String, dynamic> json) {
     return Carte(en: json['en'] as String, fr: json['fr'] as String);
+  }
+}
+
+/// Une phrase à traduire. [en] contient une ou plusieurs traductions
+/// anglaises acceptées (plusieurs réponses correctes possibles, voir
+/// CLAUDE.md), [fr] n'en a qu'une.
+class Phrase {
+  const Phrase({required this.fr, required this.en});
+
+  final String fr;
+  final List<String> en;
+
+  factory Phrase.fromJson(Map<String, dynamic> json) {
+    return Phrase(
+      fr: json['fr'] as String,
+      en: [for (final e in (json['en'] as List)) e as String],
+    );
+  }
+}
+
+/// Une mini-leçon : une règle courte, des exemples, puis un petit quiz.
+class MiniLecon {
+  const MiniLecon({
+    required this.regle,
+    required this.exemples,
+    required this.qcm,
+  });
+
+  final String regle;
+  final List<String> exemples;
+  final List<QuestionQcm> qcm;
+
+  factory MiniLecon.fromJson(Map<String, dynamic> json) {
+    return MiniLecon(
+      regle: json['regle'] as String,
+      exemples: [for (final e in (json['exemples'] as List)) e as String],
+      qcm: [
+        for (final q in (json['qcm'] as List)) QuestionQcm.fromJson(q),
+      ],
+    );
+  }
+}
+
+/// Une question à choix multiples (3 à 5 propositions), avec l'indice de
+/// la bonne réponse dans [choix].
+class QuestionQcm {
+  const QuestionQcm({
+    required this.question,
+    required this.choix,
+    required this.bonneReponseIndex,
+  });
+
+  final String question;
+  final List<String> choix;
+  final int bonneReponseIndex;
+
+  factory QuestionQcm.fromJson(Map<String, dynamic> json) {
+    return QuestionQcm(
+      question: json['question'] as String,
+      choix: [for (final c in (json['choix'] as List)) c as String],
+      bonneReponseIndex: json['bonneReponseIndex'] as int,
+    );
   }
 }

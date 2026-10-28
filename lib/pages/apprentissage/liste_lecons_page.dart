@@ -5,7 +5,7 @@ import '../../modeles/contenu.dart';
 import '../../services/contenu_service.dart';
 import '../../services/progress_service.dart';
 import '../../theme/app_colors.dart';
-import 'cartes_page.dart';
+import 'exercices_lecon_page.dart';
 
 /// La liste des leçons d'une catégorie, avec leur statut (à faire / en
 /// cours / terminée) et leur score. Touche une leçon pour commencer
@@ -96,7 +96,9 @@ class _TuileLecon extends StatelessWidget {
         trailing: const Icon(Icons.chevron_right),
         onTap: () {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartesPage(lecon: lecon)),
+            MaterialPageRoute(
+              builder: (context) => ExercicesLeconPage(lecon: lecon),
+            ),
           );
         },
       ),
